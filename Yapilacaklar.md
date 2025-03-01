@@ -14,7 +14,7 @@ Bu belge, AKBAT CONSTRUCTION web sitesi projesinde değiştirilmesi veya iyileş
    - Öneri: Tüm görselleri public/images klasörüne ekleyin veya Unsplash gibi dış kaynaklardan alınan görselleri kullanın.
 
 3. **Hizmet Bölgesi Sayfaları Eksik**:
-   - Footer'da hizmet bölgeleri için linkler var (Samsun, İlkadım, Atakum vb.) ancak bu sayfalar mevcut değil.
+   - Footer'da hizmet bölgeleri için linkler var (Vannes, Rennes, Nantes vb.) ancak bu sayfalar mevcut değil.
    - Öneri: `/bolge/[slug]` şeklinde dinamik sayfalar oluşturun.
 
 4. **Projeler Sayfası Eksik**:
@@ -68,4 +68,123 @@ Bu belge, AKBAT CONSTRUCTION web sitesi projesinde değiştirilmesi veya iyileş
 16. **Build Hataları**: ✅ YAPILDI
     - Layout dosyasında 'use client' direktifi ile metadata çakışması
     - İletişim sayfasında eksik linkText özelliği
-    - Öneri: AnimationProvider bileşeni oluşturarak client-side kodları ayrı bir bileşene taşıyın ve tip hatalarını düzeltin. 
+    - Öneri: AnimationProvider bileşeni oluşturarak client-side kodları ayrı bir bileşene taşıyın ve tip hatalarını düzeltin.
+
+17. **Fransızca Dil Desteği Ekleme**:
+    - Şirket merkezi Fransa'nın Vannes şehri olduğu için Fransızca dil desteği eklenmeli.
+    - Aşağıdaki adımlar izlenerek Fransızca dil desteği eklenebilir:
+
+    #### Adım 1: Next.js Internationalization (i18n) Kurulumu
+    ```bash
+    npm install next-intl
+    ```
+
+    #### Adım 2: Dil Dosyalarını Oluşturma
+    - `/messages` klasörü oluşturun
+    - `/messages/tr.json` ve `/messages/fr.json` dosyalarını oluşturun
+    - Her dil için çeviri metinlerini bu dosyalara ekleyin
+
+    #### Adım 3: Middleware Oluşturma
+    - `/middleware.ts` dosyası oluşturun ve dil yönlendirmelerini yapılandırın
+    ```typescript
+    import createMiddleware from 'next-intl/middleware';
+    
+    export default createMiddleware({
+      locales: ['tr', 'fr'],
+      defaultLocale: 'tr'
+    });
+    
+    export const config = {
+      matcher: ['/((?!api|_next|.*\\..*).*)']
+    };
+    ```
+
+    #### Adım 4: Rota Yapılandırması
+    - `/app` klasörü yerine `/app/[locale]` yapısını kullanın
+    - Mevcut sayfaları bu yapıya taşıyın
+
+    #### Adım 5: Dil Sağlayıcısı Oluşturma
+    - `/app/[locale]/layout.tsx` dosyasını güncelleyin
+    ```typescript
+    import { NextIntlClientProvider } from 'next-intl';
+    
+    export default async function LocaleLayout({
+      children,
+      params: { locale }
+    }) {
+      const messages = (await import(`../../messages/${locale}.json`)).default;
+    
+      return (
+        <NextIntlClientProvider locale={locale} messages={messages}>
+          {children}
+        </NextIntlClientProvider>
+      );
+    }
+    ```
+
+    #### Adım 6: Çeviri Kullanımı
+    - Metinleri çevirmek için `useTranslations` hook'unu kullanın
+    ```typescript
+    'use client';
+    import { useTranslations } from 'next-intl';
+    
+    export default function Component() {
+      const t = useTranslations('Common');
+      
+      return <h1>{t('title')}</h1>;
+    }
+    ```
+
+    #### Adım 7: Dil Değiştirme Bileşeni
+    - Header'a dil değiştirme bileşeni ekleyin
+    ```typescript
+    'use client';
+    import { usePathname, useRouter } from 'next-intl/client';
+    import { useLocale } from 'next-intl';
+    
+    export default function LanguageSwitcher() {
+      const locale = useLocale();
+      const router = useRouter();
+      const pathname = usePathname();
+      
+      const switchLocale = (newLocale) => {
+        router.replace(pathname, { locale: newLocale });
+      };
+      
+      return (
+        <div>
+          <button onClick={() => switchLocale('tr')} disabled={locale === 'tr'}>TR</button>
+          <button onClick={() => switchLocale('fr')} disabled={locale === 'fr'}>FR</button>
+        </div>
+      );
+    }
+    ```
+
+    #### Adım 8: Metadata Yapılandırması
+    - Her dil için ayrı metadata tanımlayın
+    ```typescript
+    export async function generateMetadata({ params: { locale } }) {
+      return {
+        title: locale === 'tr' 
+          ? 'AKBAT CONSTRUCTION - İnşaat ve Yapı Hizmetleri | Vannes, Fransa'
+          : 'AKBAT CONSTRUCTION - Services de Construction | Vannes, France',
+        description: locale === 'tr'
+          ? 'AKBAT CONSTRUCTION olarak 25 yıllık tecrübemizle Vannes ve çevresinde anahtar teslim ev, iç dekorasyon, dış cephe mantolama, çatı montajı ve tadilat hizmetleri sunuyoruz.'
+          : 'AKBAT CONSTRUCTION propose des services de construction clé en main, décoration intérieure, isolation extérieure, montage de toiture et rénovation à Vannes et ses environs avec 25 ans d\'expérience.'
+      };
+    }
+    ```
+
+    #### Adım 9: Statik Sayfaları Yapılandırma
+    - `next.config.js` dosyasını güncelleyin
+    ```javascript
+    const withNextIntl = require('next-intl/plugin')('./i18n.js');
+    
+    module.exports = withNextIntl({
+      // Diğer Next.js yapılandırmaları
+    });
+    ```
+
+    #### Adım 10: Fransızca İçerik Oluşturma
+    - Tüm sayfalar için Fransızca içerik oluşturun
+    - Fransızca metinleri `/messages/fr.json` dosyasına ekleyin 

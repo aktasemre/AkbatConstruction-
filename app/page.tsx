@@ -81,9 +81,9 @@ const HomePage = () => {
       <section className={styles.intro}>
         <div className={styles.container}>
           <div className={styles.introContent}>
-            <h2>AKBAT CONSTRUCTION SAMSUN İNŞAAT İLE GEREKLİ ÇÖZÜMLER</h2>
+            <h2>AKBAT CONSTRUCTION VANNES İNŞAAT İLE GEREKLİ ÇÖZÜMLER</h2>
             <div className={styles.introText}>
-              <p>AKBAT CONSTRUCTION SAMSUN İNŞAAT OLARAK MÜŞTERİLERE, TOPLULUKLARA VE ÇEVREYE HİZMET EDEN, DOĞA DOSTU VE YENİLİKÇİ İNŞAAT ÇÖZÜMLERİ SUNUYORUZ.</p>
+              <p>AKBAT CONSTRUCTION VANNES İNŞAAT OLARAK MÜŞTERİLERE, TOPLULUKLARA VE ÇEVREYE HİZMET EDEN, DOĞA DOSTU VE YENİLİKÇİ İNŞAAT ÇÖZÜMLERİ SUNUYORUZ.</p>
             </div>
             <div className={styles.stats}>
               <div className={styles.stat}>
@@ -97,7 +97,7 @@ const HomePage = () => {
             </div>
           </div>
           <div className={styles.introDescription}>
-            <p>AKBAT CONSTRUCTION Samsun İnşaat, malzeme satışından kaba inşaata, iç dekorasyondan dış cepheye kadar tüm inşaat projelerinizde yanınızda. Tadilat ve tamirat işlerinizde profesyonel dokunuşlarla mekanlarınıza yeni bir soluk getirirken, anahtar teslim ev projeleri ile hayalinizdeki yaşam alanlarını gerçeğe dönüştürüyoruz.</p>
+            <p>AKBAT CONSTRUCTION Vannes İnşaat, malzeme satışından kaba inşaata, iç dekorasyondan dış cepheye kadar tüm inşaat projelerinizde yanınızda. Tadilat ve tamirat işlerinizde profesyonel dokunuşlarla mekanlarınıza yeni bir soluk getirirken, anahtar teslim ev projeleri ile hayalinizdeki yaşam alanlarını gerçeğe dönüştürüyoruz.</p>
           </div>
         </div>
       </section>
@@ -156,7 +156,7 @@ const HomePage = () => {
             <div className={styles.projectInfo}>
               <span>VİZYON</span>
               <h3>HER PROJEDE YANINIZDAYIZ</h3>
-              <p>AKBAT CONSTRUCTION Samsun İnşaat olarak, her bütçeye ve ihtiyaca uygun projeler üretiyoruz. Kaliteli malzeme ve güvenilir işçilikle, hayalinizdeki yapıları gerçeğe dönüştürüyoruz.</p>
+              <p>AKBAT CONSTRUCTION Vannes İnşaat olarak, her bütçeye ve ihtiyaca uygun projeler üretiyoruz. Kaliteli malzeme ve güvenilir işçilikle, hayalinizdeki yapıları gerçeğe dönüştürüyoruz.</p>
               <Link href="/projeler" className={styles.projectLink}>
                 ÇOK YAKINDA SİZLERLE
                 <span className={styles.arrow}>→</span>

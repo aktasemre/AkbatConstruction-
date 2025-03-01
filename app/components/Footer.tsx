@@ -21,17 +21,17 @@ const Footer = () => {
   ];
 
   const regions = [
-    { title: 'SAMSUN HİZMET BÖLGESİ', link: '/bolge/samsun' },
-    { title: 'İLKADIM HİZMET BÖLGESİ', link: '/bolge/ilkadim' },
-    { title: 'ATAKUM HİZMET BÖLGESİ', link: '/bolge/atakum' },
-    { title: 'KAVAK HİZMET BÖLGESİ', link: '/bolge/kavak' },
+    { title: 'VANNES HİZMET BÖLGESİ', link: '/bolge/vannes' },
+    { title: 'RENNES HİZMET BÖLGESİ', link: '/bolge/rennes' },
+    { title: 'NANTES HİZMET BÖLGESİ', link: '/bolge/nantes' },
+    { title: 'LORIENT HİZMET BÖLGESİ', link: '/bolge/lorient' },
   ];
 
   const additionalRegions = [
-    { title: 'ASARCIK HİZMET BÖLGESİ', link: '/bolge/asarcik' },
-    { title: 'CANİK HİZMET BÖLGESİ', link: '/bolge/canik' },
-    { title: 'ÇARŞAMBA HİZMET BÖLGESİ', link: '/bolge/carsamba' },
-    { title: 'BAFRA HİZMET BÖLGESİ', link: '/bolge/bafra' },
+    { title: 'PARIS HİZMET BÖLGESİ', link: '/bolge/paris' },
+    { title: 'BORDEAUX HİZMET BÖLGESİ', link: '/bolge/bordeaux' },
+    { title: 'LYON HİZMET BÖLGESİ', link: '/bolge/lyon' },
+    { title: 'MARSEILLE HİZMET BÖLGESİ', link: '/bolge/marseille' },
   ];
 
   return (
@@ -86,7 +86,7 @@ const Footer = () => {
           <div className={styles.contactInfo}>
             <div className={styles.address}>
               <h3>BİZİ ZİYARET EDİN</h3>
-              <p>ATATÜRK MAHALLESİ MEHMET ÇETİN CADDESİ NO:54, ASARCIK/SAMSUN</p>
+              <p>8 RUE THIERS, 56000 VANNES, FRANCE</p>
               <Link href="https://maps.google.com" target="_blank" className={styles.directionLink}>
                 YOL TARİFİ ALIN →
               </Link>

@@ -16,7 +16,7 @@ const ContactPage = () => {
     {
       icon: 'fas fa-map-marker-alt',
       title: 'Adres',
-      content: 'ATATÜRK MAHALLESİ MEHMET ÇETİN CADDESİ NO:54, ASARCIK/SAMSUN',
+      content: '8 RUE THIERS, 56000 VANNES, FRANCE',
       link: 'https://maps.google.com',
       linkText: 'YOL TARİFİ AL'
     },

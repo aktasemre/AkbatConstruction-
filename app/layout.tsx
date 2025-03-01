@@ -7,9 +7,9 @@ import './globals.scss';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'AKBAT CONSTRUCTION - İnşaat ve Yapı Hizmetleri',
-  description: 'AKBAT CONSTRUCTION olarak 25 yıllık tecrübemizle anahtar teslim ev, iç dekorasyon, dış cephe mantolama, çatı montajı ve tadilat hizmetleri sunuyoruz.',
-  keywords: 'inşaat, yapı, tadilat, dekorasyon, mantolama, çatı, Samsun',
+  title: 'AKBAT CONSTRUCTION - İnşaat ve Yapı Hizmetleri | Vannes, Fransa',
+  description: 'AKBAT CONSTRUCTION olarak 25 yıllık tecrübemizle Vannes ve çevresinde anahtar teslim ev, iç dekorasyon, dış cephe mantolama, çatı montajı ve tadilat hizmetleri sunuyoruz.',
+  keywords: 'inşaat, yapı, tadilat, dekorasyon, mantolama, çatı, Vannes, Fransa, Bretagne',
   authors: [{ name: 'AKBAT CONSTRUCTION' }],
   creator: 'AKBAT CONSTRUCTION',
   publisher: 'AKBAT CONSTRUCTION',
