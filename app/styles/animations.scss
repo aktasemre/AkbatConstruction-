@@ -1,0 +1,249 @@
+// Temel animasyonlar
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+// Animasyon sınıfları
+.animate {
+  &-fadeIn {
+    animation: fadeIn 1s ease-out;
+  }
+  
+  &-fadeInUp {
+    animation: fadeInUp 1s ease-out;
+  }
+  
+  &-fadeInDown {
+    animation: fadeInDown 1s ease-out;
+  }
+  
+  &-fadeInLeft {
+    animation: fadeInLeft 1s ease-out;
+  }
+  
+  &-fadeInRight {
+    animation: fadeInRight 1s ease-out;
+  }
+  
+  &-zoomIn {
+    animation: zoomIn 1s ease-out;
+  }
+  
+  &-pulse {
+    animation: pulse 2s infinite;
+  }
+  
+  &-bounce {
+    animation: bounce 2s infinite;
+  }
+  
+  &-slideInUp {
+    animation: slideInUp 1s ease-out;
+  }
+  
+  &-slideInDown {
+    animation: slideInDown 1s ease-out;
+  }
+}
+
+// Animasyon gecikmeleri
+.delay {
+  &-100 {
+    animation-delay: 0.1s;
+  }
+  
+  &-200 {
+    animation-delay: 0.2s;
+  }
+  
+  &-300 {
+    animation-delay: 0.3s;
+  }
+  
+  &-400 {
+    animation-delay: 0.4s;
+  }
+  
+  &-500 {
+    animation-delay: 0.5s;
+  }
+  
+  &-600 {
+    animation-delay: 0.6s;
+  }
+  
+  &-700 {
+    animation-delay: 0.7s;
+  }
+  
+  &-800 {
+    animation-delay: 0.8s;
+  }
+  
+  &-900 {
+    animation-delay: 0.9s;
+  }
+  
+  &-1000 {
+    animation-delay: 1s;
+  }
+}
+
+// Geçiş efektleri
+.transition {
+  transition: all 0.3s ease;
+  
+  &-slow {
+    transition: all 0.5s ease;
+  }
+  
+  &-fast {
+    transition: all 0.2s ease;
+  }
+  
+  &-bounce {
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  }
+  
+  &-elastic {
+    transition: all 0.5s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+  }
+}
+
+// Hover efektleri
+.hover {
+  &-lift {
+    transition: transform 0.3s ease;
+    
+    &:hover {
+      transform: translateY(-5px);
+    }
+  }
+  
+  &-scale {
+    transition: transform 0.3s ease;
+    
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+  
+  &-shadow {
+    transition: box-shadow 0.3s ease;
+    
+    &:hover {
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    }
+  }
+  
+  &-glow {
+    transition: box-shadow 0.3s ease;
+    
+    &:hover {
+      box-shadow: 0 0 15px rgba(255, 87, 34, 0.5);
+    }
+  }
+} 

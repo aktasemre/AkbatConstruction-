@@ -1,3 +1,5 @@
+@import './styles/animations.scss';
+
 :root {
   --primary-color: #2C3E50;
   --secondary-color: #34495E;
@@ -5,6 +7,7 @@
   --background-white: #ffffff;
   --text-color: #333;
   --link-color: #0070f3;
+  --accent-color: #FF5722;
 }
 
 * {
@@ -69,6 +72,40 @@ main {
   
   &:hover {
     background-color: var(--secondary-color);
+  }
+}
+
+// Animasyon yardımcı sınıfları
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+  
+  &.active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.reveal-left {
+  opacity: 0;
+  transform: translateX(-20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+  
+  &.active {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.reveal-right {
+  opacity: 0;
+  transform: translateX(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+  
+  &.active {
+    opacity: 1;
+    transform: translateX(0);
   }
 }
 

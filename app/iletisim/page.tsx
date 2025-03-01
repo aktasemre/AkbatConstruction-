@@ -11,24 +11,28 @@ const ContactPage = () => {
       title: 'Telefon',
       content: '+33 6 30 50 85 36',
       link: 'tel:+33630508536',
+      linkText: 'HEMEN ARA'
     },
     {
       icon: 'fas fa-map-marker-alt',
       title: 'Adres',
       content: 'ATATÜRK MAHALLESİ MEHMET ÇETİN CADDESİ NO:54, ASARCIK/SAMSUN',
       link: 'https://maps.google.com',
+      linkText: 'YOL TARİFİ AL'
     },
     {
       icon: 'fas fa-envelope',
       title: 'E-posta',
       content: 'info@akbatconstruction.com',
       link: 'mailto:info@akbatconstruction.com',
+      linkText: 'MAİL GÖNDER'
     },
     {
       icon: 'fab fa-whatsapp',
       title: 'WhatsApp',
       content: '+33 6 30 50 85 36',
       link: 'https://wa.me/33630508536',
+      linkText: 'MESAJ GÖNDER'
     },
   ];
 

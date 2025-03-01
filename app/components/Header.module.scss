@@ -297,6 +297,7 @@
       .container {
         flex-direction: column;
         gap: 0.5rem;
+        padding: 0.5rem 1rem;
       }
 
       .contactInfo {
@@ -304,11 +305,66 @@
         gap: 0.5rem;
         align-items: center;
       }
+
+      .socialLinks {
+        margin-top: 0.5rem;
+      }
     }
 
     .mainHeader {
       .container {
         padding: 0 1rem;
+      }
+
+      .logo {
+        img {
+          width: 120px !important;
+          height: 48px !important;
+        }
+      }
+
+      .nav {
+        &.active {
+          padding-top: 80px;
+
+          ul {
+            gap: 2rem;
+
+            li a {
+              font-size: 1.3rem;
+              display: block;
+              padding: 0.5rem 1rem;
+              
+              &:active {
+                background: rgba(0, 0, 0, 0.05);
+                border-radius: 4px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    .topBar {
+      font-size: 0.8rem;
+
+      .contactInfo a {
+        gap: 0.3rem;
+      }
+    }
+
+    .mainHeader {
+      padding: 0.8rem 0;
+
+      .logo {
+        img {
+          width: 100px !important;
+          height: 40px !important;
+        }
       }
     }
   }
