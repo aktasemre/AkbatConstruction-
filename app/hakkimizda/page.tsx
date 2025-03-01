@@ -56,7 +56,7 @@ const AboutPage = () => {
           <h1>27 YILLIK TECRÜBE İLE KALİTELİ VE GÜVENLİ İNŞAAT ÇÖZÜMLERİ</h1>
           <div className={styles.description}>
             <div className={styles.leftContent}>
-              <p>ESİ YAPI olarak, inşaat sektöründe 1998'den bu yana sunduğumuz hizmetlerle köklü bir geçmişe sahibiz. Kurucumuz Yılmaz Çekli'nin nesiller boyunca süregelen tecrübeleri ve inşaata dair derin bilgi birikimi, Samsun ve çevresinde yüzlerce projede kendini göstermiştir. Bu birikimi daha ileri taşımak ve geleceğin yapılarını şekillendirmek adına, kaliteli, güvenilir ve yenilikçi çözümler sunmaya devam ediyoruz.</p>
+              <p>AKBAT CONSTRUCTION olarak, inşaat sektöründe 1998'den bu yana sunduğumuz hizmetlerle köklü bir geçmişe sahibiz. Kurucumuz Yusuf Aktaş'ın nesiller boyunca süregelen tecrübeleri ve inşaata dair derin bilgi birikimi, Samsun ve çevresinde yüzlerce projede kendini göstermiştir. Bu birikimi daha ileri taşımak ve geleceğin yapılarını şekillendirmek adına, kaliteli, güvenilir ve yenilikçi çözümler sunmaya devam ediyoruz.</p>
             </div>
             <div className={styles.rightContent}>
               <p>Yılların getirdiği tecrübemiz, sürekli gelişen inşaat teknolojileri ile harmanlanıyor ve projelerimizde modern tekniklerle güçlü yapılar inşa ediyoruz. Malzeme satışı, anahtar teslim projeler ve tadilat çözümleri ile sektörde fark yaratıyoruz. Yılmaz İnşaat olarak, müşteri memnuniyetini en ön planda tutuyor ve her projeye büyük bir titizlikle yaklaşıyoruz.</p>
@@ -85,7 +85,7 @@ const AboutPage = () => {
       <section className={styles.approach}>
         <div className={styles.container}>
           <h2>HER PROJEYE DEĞER KATAN YAKLAŞIM</h2>
-          <p>ESİ YAPI olarak, müşteri memnuniyetini her şeyin önüne koyuyoruz. Projelerimizin her aşamasında, müşterilerimize kendilerini değerli hissettirecek güçlü bağlar kurmaya odaklanıyoruz. 25 yılı aşkın tecrübemizle, her projeye bir dost gibi yaklaşarak en iyi çözümleri sunuyoruz. Güvenilir, sürdürülebilir ve yenilikçi inşaat çözümlerimizle, kalite ve başarıyı bir araya getiriyoruz.</p>
+          <p>AKBAT CONSTRUCTION olarak, müşteri memnuniyetini her şeyin önüne koyuyoruz. Projelerimizin her aşamasında, müşterilerimize kendilerini değerli hissettirecek güçlü bağlar kurmaya odaklanıyoruz. 25 yılı aşkın tecrübemizle, her projeye bir dost gibi yaklaşarak en iyi çözümleri sunuyoruz. Güvenilir, sürdürülebilir ve yenilikçi inşaat çözümlerimizle, kalite ve başarıyı bir araya getiriyoruz.</p>
         </div>
       </section>
 
@@ -130,7 +130,7 @@ const AboutPage = () => {
             <div className={styles.ceoImage}>
               <Image
                 src="/images/ceo.jpg"
-                alt="Yılmaz Çekli"
+                alt="Yusuf Aktaş"
                 width={400}
                 height={400}
                 style={{ objectFit: 'cover' }}
@@ -140,7 +140,7 @@ const AboutPage = () => {
               <blockquote>
                 "25 yılı aşkın süredir inşaat sektöründe yenilikçi çözümler sunuyoruz. Bugün, hedefimiz sürdürülebilir projelerle geleceğin inşaat sektörünü şekillendirmek ve güvenli yapılarla topluma katkı sağlamak. Birlikte, daha yeşil ve güvenli yarınlar inşa ediyoruz."
               </blockquote>
-              <cite>YILMAZ ÇEKLİ</cite>
+              <cite>YUSUF AKTAŞ</cite>
               <span>Kurucu</span>
             </div>
           </div>

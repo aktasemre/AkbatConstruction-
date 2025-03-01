@@ -34,8 +34,10 @@ const KabaInsaatPage = () => {
 
       <section className={styles.hero}>
         <div className={styles.container}>
-          <h1>KABA İNŞAAT</h1>
-          <p>ESİ YAPI olarak, kaba inşaat işlerinde profesyonel ve güvenilir çözümler sunuyoruz. Temel kazısından çatı katına kadar tüm yapısal elemanları, en son teknoloji ve yüksek kalite standartlarında inşa ediyoruz. Deneyimli mühendis ve ustalarımızla, projenizin her aşamasında kalite kontrolü sağlıyoruz.</p>
+          <div className={styles.serviceIntro}>
+            <h1>KABA İNŞAAT</h1>
+            <p>AKBAT CONSTRUCTION olarak, kaba inşaat işlerinde profesyonel ve güvenilir çözümler sunuyoruz. Temel kazısından çatı katına kadar tüm yapısal elemanları, en son teknoloji ve yüksek kalite standartlarında inşa ediyoruz. Depreme dayanıklı, sağlam ve uzun ömürlü yapılar için doğru adresiniz.</p>
+          </div>
         </div>
       </section>
 

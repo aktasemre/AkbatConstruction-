@@ -41,8 +41,10 @@ const CatiMontajPage = () => {
 
       <section className={styles.hero}>
         <div className={styles.container}>
-          <h1>ÇATI MONTAJI</h1>
-          <p>ESİ YAPI olarak, çatı sistemlerinde profesyonel çözümler sunuyoruz. Modern teknoloji ve kaliteli malzemelerle, binanızın üst örtüsünü güvenle yapılandırıyor, su ve ısı yalıtımı ile enerji tasarrufu sağlıyoruz. Uzman ekibimizle çatınızı güvenle ve estetik bir şekilde inşa ediyoruz.</p>
+          <div className={styles.serviceIntro}>
+            <h1>ÇATI MONTAJI</h1>
+            <p>AKBAT CONSTRUCTION olarak, çatı sistemlerinde profesyonel çözümler sunuyoruz. Modern teknoloji ve kaliteli malzemelerle, binanızın üst örtüsünü güvenle yapılandırıyor, su ve ısı yalıtımı ile enerji tasarrufu sağlıyoruz. Çatı tadilatı, yenileme ve bakım hizmetlerimizle, yapınızı dış etkenlerden koruyoruz.</p>
+          </div>
         </div>
       </section>
 

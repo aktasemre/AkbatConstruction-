@@ -34,8 +34,10 @@ const MalzemeSatisPage = () => {
 
       <section className={styles.hero}>
         <div className={styles.container}>
-          <h1>MALZEME SATIŞI</h1>
-          <p>ESİ YAPI olarak, inşaat sektörünün tüm ihtiyaçlarına yönelik geniş ürün yelpazemizle hizmet veriyoruz. Yapı malzemelerinden teknik ekipmanlara, boyadan yalıtım malzemelerine kadar her türlü inşaat malzemesini uygun fiyat ve kalite garantisiyle sunuyoruz.</p>
+          <div className={styles.serviceIntro}>
+            <h1>MALZEME SATIŞI</h1>
+            <p>AKBAT CONSTRUCTION olarak, inşaat sektörünün tüm ihtiyaçlarına yönelik geniş ürün yelpazemizle hizmet veriyoruz. Yapı malzemelerinden teknik ekipmanlara, boyadan yalıtım malzemelerine kadar her türlü inşaat malzemesini uygun fiyatlarla sunuyoruz.</p>
+          </div>
         </div>
       </section>
 

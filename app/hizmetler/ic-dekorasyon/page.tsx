@@ -41,8 +41,10 @@ const IcDekorasyonPage = () => {
 
       <section className={styles.hero}>
         <div className={styles.container}>
-          <h1>İÇ DEKORASYON</h1>
-          <p>ESİ YAPI olarak, yaşam alanlarınızı modern ve fonksiyonel bir şekilde tasarlıyor, estetik ve kullanışlılığı bir araya getiriyoruz. Her projeye özel yaklaşımımız ve deneyimli ekibimizle, hayalinizdeki mekanı gerçeğe dönüştürüyoruz.</p>
+          <div className={styles.serviceIntro}>
+            <h1>İÇ DEKORASYON</h1>
+            <p>AKBAT CONSTRUCTION olarak, yaşam alanlarınızı modern ve fonksiyonel bir şekilde tasarlıyor, estetik ve kullanışlılığı bir araya getiriyoruz. Her projeye özel yaklaşımımız ve deneyimli ekibimizle, hayalinizdeki mekanları gerçeğe dönüştürüyoruz.</p>
+          </div>
         </div>
       </section>
 

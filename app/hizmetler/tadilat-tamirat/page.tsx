@@ -41,8 +41,10 @@ const TadilatTamiratPage = () => {
 
       <section className={styles.hero}>
         <div className={styles.container}>
-          <h1>TADİLAT & TAMİRAT</h1>
-          <p>ESİ YAPI olarak, yaşam ve çalışma alanlarınızın tadilat ve tamirat işlerini profesyonel bir yaklaşımla gerçekleştiriyoruz. Küçük onarımlardan kapsamlı renovasyon projelerine kadar her ölçekte hizmet sunuyoruz. Deneyimli ekibimiz ve kaliteli malzemelerimizle mekanlarınızı yeniliyoruz.</p>
+          <div className={styles.serviceIntro}>
+            <h1>TADİLAT & TAMİRAT</h1>
+            <p>AKBAT CONSTRUCTION olarak, yaşam ve çalışma alanlarınızın tadilat ve tamirat işlerini profesyonel bir yaklaşımla gerçekleştiriyoruz. Küçük onarımlardan kapsamlı renovasyon projelerine kadar her ölçekte hizmet sunuyoruz. Deneyimli ekibimiz ve kaliteli malzemelerle, mekanlarınızı yeniliyor, değer katıyoruz.</p>
+          </div>
         </div>
       </section>
 

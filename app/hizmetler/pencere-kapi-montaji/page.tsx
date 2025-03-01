@@ -41,8 +41,10 @@ const PencereKapiMontajPage = () => {
 
       <section className={styles.hero}>
         <div className={styles.container}>
-          <h1>PENCERE & KAPI MONTAJI</h1>
-          <p>ESİ YAPI olarak, yaşam alanlarınızın güvenliğini ve konforunu artıracak kapı ve pencere çözümleri sunuyoruz. Modern sistemler ve kaliteli malzemelerle, enerji tasarrufu sağlayan, ses yalıtımı yüksek ve güvenli montaj hizmetleri veriyoruz.</p>
+          <div className={styles.serviceIntro}>
+            <h1>PENCERE & KAPI MONTAJI</h1>
+            <p>AKBAT CONSTRUCTION olarak, yaşam alanlarınızın güvenliğini ve konforunu artıracak kapı ve pencere çözümleri sunuyoruz. Modern sistemler ve kaliteli malzemelerle, enerji tasarrufu sağlayan, ses yalıtımı yüksek ve estetik görünümlü kapı ve pencereler monte ediyoruz.</p>
+          </div>
         </div>
       </section>
 

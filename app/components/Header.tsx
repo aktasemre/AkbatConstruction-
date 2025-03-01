@@ -33,13 +33,13 @@ const Header = () => {
       <div className={styles.topBar}>
         <div className={styles.container}>
           <div className={styles.contactInfo}>
-            <a href="tel:+905356752515">
+            <a href="tel:+33630508536">
               <i className="fas fa-phone"></i>
-              <span>+90 535 675 2515</span>
+              <span>+33 6 30 50 85 36</span>
             </a>
-            <a href="mailto:info@esiyapi.com">
+            <a href="mailto:info@akbatconstruction.com">
               <i className="fas fa-envelope"></i>
-              <span>info@esiyapi.com</span>
+              <span>info@akbatconstruction.com</span>
             </a>
           </div>
           <div className={styles.socialLinks}>
@@ -49,7 +49,7 @@ const Header = () => {
             <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
               <i className="fab fa-facebook-f"></i>
             </a>
-            <a href="https://wa.me/905356752515" target="_blank" rel="noopener noreferrer">
+            <a href="https://wa.me/33630508536" target="_blank" rel="noopener noreferrer">
               <i className="fab fa-whatsapp"></i>
             </a>
           </div>
@@ -90,7 +90,7 @@ const Header = () => {
           </nav>
 
           <div className={styles.cta}>
-            <a href="tel:+905356752515" className={styles.phone}>
+            <a href="tel:+33630508536" className={styles.phone}>
               <i className="fas fa-phone"></i>
               <span>Bizi Arayın</span>
             </a>

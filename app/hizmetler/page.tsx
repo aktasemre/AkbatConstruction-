@@ -64,7 +64,7 @@ const ServicesPage = () => {
           <h1>HİZMETLERİMİZ</h1>
           <div className={styles.description}>
             <div className={styles.leftContent}>
-              <p>ESİ YAPI olarak, inşaat sektöründe anahtar teslim projelerden malzeme satışına, iç dekorasyondan çatı montajına kadar geniş bir hizmet yelpazesiyle yanınızdayız. Kaliteli malzemeler ve uzman ekibimizle, estetik ve dayanıklılığı bir araya getirerek yaşam alanlarınızı dönüştürüyoruz.</p>
+              <p>AKBAT CONSTRUCTION olarak, inşaat sektöründe anahtar teslim projelerden malzeme satışına, iç dekorasyondan çatı montajına kadar geniş bir hizmet yelpazesiyle yanınızdayız. Kaliteli malzemeler ve uzman ekibimizle, estetik ve dayanıklılığı bir araya getirerek yaşam alanlarınızı dönüştürüyoruz.</p>
             </div>
             <div className={styles.rightContent}>
               <p>Her projede müşteri memnuniyetini en üst seviyede tutmayı hedefliyoruz. Her hizmetimiz, projelerinizi sorunsuz ve etkili bir şekilde tamamlamak için profesyonel bir yaklaşımla sunulmaktadır.</p>

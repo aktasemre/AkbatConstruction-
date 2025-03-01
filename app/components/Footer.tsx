@@ -93,8 +93,8 @@ const Footer = () => {
             </div>
             <div className={styles.contact}>
               <h3>İLETİŞİME GEÇİN</h3>
-              <a href="tel:+905356752515">+90 535 675 2515</a>
-              <a href="mailto:info@esiyapi.com">info@esiyapi.com</a>
+              <a href="tel:+33630508536">+33 6 30 50 85 36</a>
+              <a href="mailto:info@akbatconstruction.com">info@akbatconstruction.com</a>
             </div>
             <div className={styles.social}>
               <h3>BİZİ TAKİP EDİN</h3>
@@ -109,7 +109,7 @@ const Footer = () => {
             </div>
           </div>
           <div className={styles.copyright}>
-            <p>© 2025 — Tum haklasi saklidir-aktasemre1988@gmail.com <link rel="stylesheet" href="aktasemre1988@gmail.com" /></p>
+            <p>© 2025 — Tum haklasi saklidir-aktasemre1988@gmail.com</p>
             <div className={styles.links}>
               <Link href="/kullanim-kosullari">Kullanım Koşulları</Link>
               <Link href="/gizlilik-politikasi">Gizlilik Politikası</Link>

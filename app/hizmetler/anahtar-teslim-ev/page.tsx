@@ -39,8 +39,10 @@ const AnahtarTeslimPage = () => {
 
       <section className={styles.hero}>
         <div className={styles.container}>
-          <h1>ANAHTAR TESLİM EV</h1>
-          <p>ESİ YAPI olarak, hayalinizdeki evi A'dan Z'ye inşa ediyoruz. Projelendirmeden iç dekorasyona, bahçe düzenlemesinden son detayına kadar tüm süreci profesyonel bir şekilde yönetiyoruz. Kaliteli malzeme ve işçilikle, yaşam standartlarınızı yükseltecek mekanlar yaratıyoruz.</p>
+          <div className={styles.serviceIntro}>
+            <h1>ANAHTAR TESLİM EV</h1>
+            <p>AKBAT CONSTRUCTION olarak, hayalinizdeki evi A'dan Z'ye inşa ediyoruz. Projelendirmeden iç dekorasyona, bahçe düzenlemesinden son detayına kadar tüm süreci profesyonel bir şekilde yönetiyoruz. Kaliteli malzeme ve işçilikle, zamanında teslim garantisiyle, bütçenize uygun çözümler sunuyoruz.</p>
+          </div>
         </div>
       </section>
 

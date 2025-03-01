@@ -97,7 +97,7 @@ const HomePage = () => {
             </div>
           </div>
           <div className={styles.introDescription}>
-            <p>Esi Yapı Samsun İnşaat, malzeme satışından kaba inşaata, iç dekorasyondan dış cepheye kadar tüm inşaat projelerinizde yanınızda. Tadilat ve tamirat işlerinizde profesyonel dokunuşlarla mekanlarınıza yeni bir soluk getirirken, anahtar teslim ev projeleri ile hayalinizdeki yaşam alanlarını gerçeğe dönüştürüyoruz.</p>
+            <p>AKBAT CONSTRUCTION Samsun İnşaat, malzeme satışından kaba inşaata, iç dekorasyondan dış cepheye kadar tüm inşaat projelerinizde yanınızda. Tadilat ve tamirat işlerinizde profesyonel dokunuşlarla mekanlarınıza yeni bir soluk getirirken, anahtar teslim ev projeleri ile hayalinizdeki yaşam alanlarını gerçeğe dönüştürüyoruz.</p>
           </div>
         </div>
       </section>
@@ -156,7 +156,7 @@ const HomePage = () => {
             <div className={styles.projectInfo}>
               <span>VİZYON</span>
               <h3>HER PROJEDE YANINIZDAYIZ</h3>
-              <p>ESİ YAPI Samsun İnşaat olarak, her bütçeye ve ihtiyaca uygun projeler üretiyoruz. Kaliteli malzeme ve güvenilir işçilikle, hayalinizdeki yapıları gerçeğe dönüştürüyoruz.</p>
+              <p>AKBAT CONSTRUCTION Samsun İnşaat olarak, her bütçeye ve ihtiyaca uygun projeler üretiyoruz. Kaliteli malzeme ve güvenilir işçilikle, hayalinizdeki yapıları gerçeğe dönüştürüyoruz.</p>
               <Link href="/projeler" className={styles.projectLink}>
                 ÇOK YAKINDA SİZLERLE
                 <span className={styles.arrow}>→</span>

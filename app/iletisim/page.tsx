@@ -7,33 +7,29 @@ import styles from './page.module.scss';
 const ContactPage = () => {
   const contactInfo = [
     {
+      icon: 'fas fa-phone',
+      title: 'Telefon',
+      content: '+33 6 30 50 85 36',
+      link: 'tel:+33630508536',
+    },
+    {
       icon: 'fas fa-map-marker-alt',
-      title: 'ADRES',
+      title: 'Adres',
       content: 'ATATÜRK MAHALLESİ MEHMET ÇETİN CADDESİ NO:54, ASARCIK/SAMSUN',
       link: 'https://maps.google.com',
-      linkText: 'YOL TARİFİ AL'
-    },
-    {
-      icon: 'fas fa-phone',
-      title: 'TELEFON',
-      content: '+90 535 675 2515',
-      link: 'tel:+905356752515',
-      linkText: 'HEMEN ARA'
-    },
-    {
-      icon: 'fab fa-whatsapp',
-      title: 'WHATSAPP',
-      content: '+90 535 675 2515',
-      link: 'https://wa.me/905356752515',
-      linkText: 'MESAJ GÖNDER'
     },
     {
       icon: 'fas fa-envelope',
-      title: 'E-POSTA',
-      content: 'info@esiyapi.com',
-      link: 'mailto:info@esiyapi.com',
-      linkText: 'MAİL GÖNDER'
-    }
+      title: 'E-posta',
+      content: 'info@akbatconstruction.com',
+      link: 'mailto:info@akbatconstruction.com',
+    },
+    {
+      icon: 'fab fa-whatsapp',
+      title: 'WhatsApp',
+      content: '+33 6 30 50 85 36',
+      link: 'https://wa.me/33630508536',
+    },
   ];
 
   const socialLinks = [
@@ -58,8 +54,10 @@ const ContactPage = () => {
     <div className={styles.contactPage}>
       <section className={styles.hero}>
         <div className={styles.container}>
-          <h1>İLETİŞİME GEÇİN</h1>
-          <p>ESİ YAPI olarak, projeleriniz için en uygun çözümleri sunmak üzere yanınızdayız. Soru, öneri ve talepleriniz için bize ulaşın, en kısa sürede dönüş yapalım.</p>
+          <div className={styles.contactIntro}>
+            <h1>İLETİŞİME GEÇİN</h1>
+            <p>AKBAT CONSTRUCTION olarak, projeleriniz için en uygun çözümleri sunmak üzere yanınızdayız. Soru, öneri ve talepleriniz için bize ulaşın, en kısa sürede dönüş yapalım.</p>
+          </div>
         </div>
       </section>
 
@@ -105,11 +103,14 @@ const ContactPage = () => {
 
             <div className={styles.map}>
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12345.67890!2d36.123456!3d41.123456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDHCsDA3JzM0LjQiTiAzNsKwMDcnMzQuNCJF!5e0!3m2!1str!2str!4v1234567890"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2997.8069882486844!2d36.23079999999999!3d41.2999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDHCsDE3JzU5LjYiTiAzNsKwMTMnNTAuOSJF!5e0!3m2!1str!2str!4v1625000000000!5m2!1str!2str"
+                width="600"
+                height="450"
+                style={{ border: 0 }}
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="ESİ YAPI Konum"
+                title="AKBAT CONSTRUCTION Konum"
               ></iframe>
             </div>
           </div>
