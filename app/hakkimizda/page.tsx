@@ -59,7 +59,7 @@ const AboutPage = () => {
               <p>AKBAT CONSTRUCTION olarak, inşaat sektöründe 1998'den bu yana sunduğumuz hizmetlerle köklü bir geçmişe sahibiz. Kurucumuz Yusuf Aktaş'ın nesiller boyunca süregelen tecrübeleri ve inşaata dair derin bilgi birikimi, Samsun ve çevresinde yüzlerce projede kendini göstermiştir. Bu birikimi daha ileri taşımak ve geleceğin yapılarını şekillendirmek adına, kaliteli, güvenilir ve yenilikçi çözümler sunmaya devam ediyoruz.</p>
             </div>
             <div className={styles.rightContent}>
-              <p>Yılların getirdiği tecrübemiz, sürekli gelişen inşaat teknolojileri ile harmanlanıyor ve projelerimizde modern tekniklerle güçlü yapılar inşa ediyoruz. Malzeme satışı, anahtar teslim projeler ve tadilat çözümleri ile sektörde fark yaratıyoruz. Yılmaz İnşaat olarak, müşteri memnuniyetini en ön planda tutuyor ve her projeye büyük bir titizlikle yaklaşıyoruz.</p>
+              <p>Yılların getirdiği tecrübemiz, sürekli gelişen inşaat teknolojileri ile harmanlanıyor ve projelerimizde modern tekniklerle güçlü yapılar inşa ediyoruz. Malzeme satışı, anahtar teslim projeler ve tadilat çözümleri ile sektörde fark yaratıyoruz. AKBAT CONSTRUCTION olarak, müşteri memnuniyetini en ön planda tutuyor ve her projeye büyük bir titizlikle yaklaşıyoruz.</p>
             </div>
           </div>
         </div>

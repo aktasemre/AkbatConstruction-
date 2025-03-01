@@ -1,0 +1,123 @@
+.termsPage {
+  padding-top: 120px;
+  padding-bottom: 4rem;
+  animation: fadeIn 1s ease-out;
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #1a1a1a;
+    text-align: center;
+  }
+
+  .content {
+    background: white;
+    padding: 3rem;
+    border-radius: 8px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+
+    section {
+      margin-bottom: 2.5rem;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      h2 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        color: #FF5722;
+      }
+
+      p {
+        font-size: 1rem;
+        line-height: 1.7;
+        color: #444;
+        margin-bottom: 1rem;
+
+        a {
+          color: #FF5722;
+          text-decoration: underline;
+          transition: all 0.3s ease;
+
+          &:hover {
+            color: #1a1a1a;
+          }
+        }
+      }
+    }
+  }
+
+  .backLink {
+    margin-top: 2rem;
+    text-align: center;
+
+    a {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: #1a1a1a;
+      font-weight: 500;
+      transition: all 0.3s ease;
+      position: relative;
+
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background: #FF5722;
+        transition: width 0.3s ease;
+      }
+
+      &:hover {
+        color: #FF5722;
+
+        &::after {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .termsPage {
+    padding-top: 100px;
+
+    .container {
+      padding: 0 1rem;
+    }
+
+    h1 {
+      font-size: 2rem;
+    }
+
+    .content {
+      padding: 2rem;
+
+      section {
+        h2 {
+          font-size: 1.3rem;
+        }
+      }
+    }
+  }
+} 

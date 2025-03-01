@@ -109,7 +109,7 @@ const Footer = () => {
             </div>
           </div>
           <div className={styles.copyright}>
-            <p>© 2025 — Tum haklasi saklidir-aktasemre1988@gmail.com</p>
+            <p>© 2025 — Tum haklari saklidir - aktasemre1988@gmail.com</p>
             <div className={styles.links}>
               <Link href="/kullanim-kosullari">Kullanım Koşulları</Link>
               <Link href="/gizlilik-politikasi">Gizlilik Politikası</Link>

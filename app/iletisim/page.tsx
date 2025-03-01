@@ -45,7 +45,7 @@ const ContactPage = () => {
     },
     {
       icon: 'fab fa-whatsapp',
-      link: 'https://wa.me/905356752515',
+      link: 'https://wa.me/33630508536',
       label: 'WhatsApp'
     }
   ];
@@ -121,7 +121,7 @@ const ContactPage = () => {
         <div className={styles.container}>
           <h2>HEMEN TEKLİF ALIN</h2>
           <p>Projeleriniz için ücretsiz keşif ve fiyat teklifi almak için hemen iletişime geçin.</p>
-          <a href="https://wa.me/905356752515" className={styles.button} target="_blank" rel="noopener noreferrer">
+          <a href="https://wa.me/33630508536" className={styles.button} target="_blank" rel="noopener noreferrer">
             WHATSAPP İLE ULAŞIN
             <span className={styles.arrow}>→</span>
           </a>

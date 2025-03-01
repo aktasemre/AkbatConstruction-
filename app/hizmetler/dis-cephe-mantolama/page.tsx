@@ -54,7 +54,7 @@ const DisMantolamaPage = () => {
           
           <div className={styles.description}>
             <div>
-              <p>Esi Yapı olarak, dış cephe mantolama alanında uzun yıllara dayanan deneyimimizle, projelerinizde estetik ve güvenliği bir arada sunuyoruz. Dış cephe sadece yapınızın estetik görünümünü değil, aynı zamanda çevresel etkenlerle karşı korunmasını da sağlar.</p>
+              <p>AKBAT CONSTRUCTION olarak, dış cephe mantolama alanında uzun yıllara dayanan deneyimimizle, projelerinizde estetik ve güvenliği bir arada sunuyoruz. Dış cephe sadece yapınızın estetik görünümünü değil, aynı zamanda çevresel etkenlerle karşı korunmasını da sağlar.</p>
             </div>
             <div>
               <p>Kullanılan kaliteli yalıtım malzemeleri, enerji tasarrufunu artırarak yapının ömrünü uzatır ve çevresel etkilere karşı maksimum koruma sağlar. Dış cephe inşaatında, yenilikçi malzemeler ve modern teknikler kullanarak, projelerinizi kusursuz bir şekilde tamamlıyoruz.</p>
