@@ -1,0 +1,446 @@
+{
+  "Common": {
+    "home": "Ana Sayfa",
+    "about": "Hakkımızda",
+    "services": "Hizmetlerimiz",
+    "contact": "İletişim",
+    "callUs": "Bizi Arayın",
+    "getQuote": "Teklif Alın",
+    "readMore": "Daha Fazla",
+    "viewAll": "Tümünü Gör",
+    "contactUs": "Bize Ulaşın",
+    "learnMore": "Detaylı Bilgi",
+    "backToHome": "Ana Sayfaya Dön",
+    "since": "2000'den beri"
+  },
+  "Header": {
+    "phone": "Telefon",
+    "email": "E-posta",
+    "menu": "Menü"
+  },
+  "Footer": {
+    "quickLinks": "Hızlı Bağlantılar",
+    "services": "Hizmetlerimiz",
+    "serviceAreas": "Hizmet Bölgelerimiz",
+    "address": "Adres",
+    "getDirections": "Yol Tarifi Al",
+    "contactInfo": "İletişim Bilgileri",
+    "followUs": "Bizi Takip Edin",
+    "allRightsReserved": "Tüm Hakları Saklıdır",
+    "privacyPolicy": "Gizlilik Politikası",
+    "termsOfUse": "Kullanım Koşulları"
+  },
+  "HomePage": {
+    "hero": {
+      "title": "Hayalinizdeki Yapıyı İnşa Ediyoruz",
+      "description": "25 yıllık tecrübemizle Vannes ve çevresinde kaliteli inşaat ve yapı hizmetleri sunuyoruz.",
+      "button": "Hizmetlerimizi Keşfedin"
+    },
+    "intro": {
+      "title": "AKBAT CONSTRUCTION",
+      "description": "Fransa'nın Vannes şehrinde 25 yıldır faaliyet gösteren AKBAT CONSTRUCTION, anahtar teslim ev yapımından iç dekorasyona, dış cephe mantolamadan çatı montajına kadar geniş bir yelpazede hizmet sunmaktadır.",
+      "stats": {
+        "experience": "Yıllık Tecrübe",
+        "projects": "Tamamlanan Proje",
+        "clients": "Mutlu Müşteri",
+        "team": "Uzman Ekip Üyesi"
+      }
+    },
+    "services": {
+      "title": "Hizmetlerimiz",
+      "viewAll": "Tüm Hizmetleri Gör"
+    },
+    "features": {
+      "quality": "Yüksek Kalite",
+      "onTime": "Zamanında Teslim",
+      "expertise": "Uzman Ekip",
+      "affordable": "Uygun Fiyat",
+      "warranty": "Garanti",
+      "support": "7/24 Destek"
+    },
+    "projects": {
+      "title": "Son Projelerimiz",
+      "subtitle": "Projeler",
+      "description": "Son tamamladığımız projelerimizden bazıları. Kalite ve güvenilirlik bizim önceliğimizdir.",
+      "button": "Tüm Projeleri Gör"
+    },
+    "cta": {
+      "subtitle": "Bizimle Çalışın",
+      "title": "Hayalinizdeki Projeyi Gerçekleştirelim",
+      "button": "Hemen İletişime Geçin"
+    }
+  },
+  "AboutPage": {
+    "hero": {
+      "title": "25 Yıllık Tecrübe ile Kaliteli İnşaat ve Yapı Hizmetleri",
+      "description1": "AKBAT CONSTRUCTION olarak, 2000 yılından bu yana Fransa'nın Vannes şehrinde ve çevresinde kaliteli inşaat ve yapı hizmetleri sunuyoruz. Kurucumuz Emre Aktaş'ın liderliğinde, müşteri memnuniyetini ön planda tutan bir anlayışla çalışıyoruz.",
+      "description2": "Anahtar teslim ev yapımından iç dekorasyona, dış cephe mantolamadan çatı montajına kadar geniş bir yelpazede hizmet sunuyoruz. Uzman ekibimiz ve kaliteli malzemelerimizle, projelerinizi zamanında ve bütçenize uygun şekilde tamamlıyoruz."
+    },
+    "experience": {
+      "title": "Tecrübe",
+      "years": "25",
+      "yearsText": "Yıllık Tecrübe",
+      "projects": "500+",
+      "projectsText": "Tamamlanan Proje",
+      "clients": "300+",
+      "clientsText": "Mutlu Müşteri"
+    },
+    "approach": {
+      "title": "Çalışma Yaklaşımımız",
+      "description": "Her projede müşteri memnuniyetini ön planda tutuyoruz. Projenin ilk aşamasından teslim aşamasına kadar her adımda şeffaf ve dürüst bir iletişim kuruyoruz. Kaliteli malzeme kullanımı ve uzman işçilik ile projelerinizi zamanında ve bütçenize uygun şekilde tamamlıyoruz."
+    },
+    "values": {
+      "title": "Değerlerimiz",
+      "description": "AKBAT CONSTRUCTION olarak, her projede aşağıdaki değerlerimizi ön planda tutuyoruz:",
+      "quality": "Kalite",
+      "qualityText": "Her projede en kaliteli malzemeleri kullanıyor ve en iyi işçiliği sunuyoruz.",
+      "integrity": "Dürüstlük",
+      "integrityText": "Müşterilerimizle dürüst ve şeffaf bir iletişim kuruyoruz.",
+      "reliability": "Güvenilirlik",
+      "reliabilityText": "Projelerinizi zamanında ve bütçenize uygun şekilde tamamlıyoruz.",
+      "expertise": "Uzmanlık",
+      "expertiseText": "Uzman ekibimizle en karmaşık projeleri bile başarıyla tamamlıyoruz.",
+      "innovation": "Yenilikçilik",
+      "innovationText": "En son teknoloji ve yöntemleri kullanarak projelerinizi hayata geçiriyoruz.",
+      "sustainability": "Sürdürülebilirlik",
+      "sustainabilityText": "Çevre dostu malzemeler ve yöntemler kullanarak sürdürülebilir projeler üretiyoruz."
+    },
+    "brands": {
+      "title": "Çalıştığımız Markalar",
+      "description": "Kaliteli malzeme kullanımı bizim için çok önemli. Bu nedenle, sektörün önde gelen markalarıyla çalışıyoruz."
+    },
+    "ceo": {
+      "quote": "AKBAT CONSTRUCTION olarak, her projede müşteri memnuniyetini ön planda tutuyoruz. Kaliteli malzeme kullanımı ve uzman işçilik ile projelerinizi zamanında ve bütçenize uygun şekilde tamamlıyoruz.",
+      "name": "Emre Aktaş",
+      "title": "Kurucu & CEO"
+    }
+  },
+  "ServicesPage": {
+    "title": "HİZMETLERİMİZ",
+    "description1": "AKBAT CONSTRUCTION olarak, inşaat sektöründe anahtar teslim projelerden malzeme satışına, iç dekorasyondan çatı montajına kadar geniş bir hizmet yelpazesiyle yanınızdayız. Kaliteli malzemeler ve uzman ekibimizle, estetik ve dayanıklılığı bir araya getirerek yaşam alanlarınızı dönüştürüyoruz.",
+    "description2": "Her projede müşteri memnuniyetini en üst seviyede tutmayı hedefliyoruz. Her hizmetimiz, projelerinizi sorunsuz ve etkili bir şekilde tamamlamak için profesyonel bir yaklaşımla sunulmaktadır.",
+    "services": {
+      "turnkey": "ANAHTAR TESLİM EV",
+      "roofing": "ÇATI MONTAJI",
+      "interior": "İÇ DEKORASYON",
+      "roughConstruction": "KABA İNŞAAT",
+      "exteriorInsulation": "DIŞ CEPHE MANTOLAMA",
+      "materialSales": "MALZEME SATIŞI",
+      "windowsDoors": "PENCERE & KAPI MONTAJI",
+      "renovation": "TADİLAT & TAMİRAT",
+      "interiorDecoration": "İÇ DEKORASYON",
+      "turnkeyHomes": "ANAHTAR TESLİM EV"
+    }
+  },
+  "ContactPage": {
+    "title": "İLETİŞİME GEÇİN",
+    "intro": "AKBAT CONSTRUCTION olarak, projeleriniz için en uygun çözümleri sunmak üzere yanınızdayız. Soru, öneri ve talepleriniz için bize ulaşın, en kısa sürede dönüş yapalım.",
+    "contactInfo": "İLETİŞİM BİLGİLERİ",
+    "socialMedia": "SOSYAL MEDYA",
+    "mapTitle": "AKBAT CONSTRUCTION Konum",
+    "infoItems": {
+      "phone": {
+        "title": "Telefon"
+      },
+      "address": {
+        "title": "Adres"
+      },
+      "email": {
+        "title": "E-posta"
+      },
+      "whatsapp": {
+        "title": "WhatsApp"
+      },
+      "phoneNumber": "+33 6 30 50 85 36",
+      "addressText": "8 RUE THIERS, 56000 VANNES, FRANCE",
+      "emailAddress": "info@akbatconstruction.com",
+      "whatsappNumber": "+33 6 30 50 85 36",
+      "call": "HEMEN ARA",
+      "directions": "YOL TARİFİ AL",
+      "sendEmail": "MAİL GÖNDER",
+      "sendMessage": "MESAJ GÖNDER"
+    },
+    "cta": {
+      "title": "HEMEN TEKLİF ALIN",
+      "description": "Projeleriniz için ücretsiz keşif ve fiyat teklifi almak için hemen iletişime geçin.",
+      "button": "WHATSAPP İLE ULAŞIN"
+    }
+  },
+  "PrivacyPage": {
+    "title": "GİZLİLİK POLİTİKASI",
+    "section1": {
+      "title": "1. GİRİŞ",
+      "content": "AKBAT CONSTRUCTION olarak, gizliliğinize saygı duyuyor ve kişisel verilerinizin korunmasına önem veriyoruz. Bu gizlilik politikası, web sitemizi ziyaret ettiğinizde veya hizmetlerimizi kullandığınızda kişisel verilerinizin nasıl toplandığını, kullanıldığını ve korunduğunu açıklamaktadır."
+    },
+    "section2": {
+      "title": "2. TOPLANAN BİLGİLER",
+      "intro": "Web sitemizi ziyaret ettiğinizde, iletişim formlarını doldurduğunuzda veya hizmetlerimizi talep ettiğinizde aşağıdaki bilgileri toplayabiliriz:",
+      "items": {
+        "item1": "Ad, soyad, e-posta adresi, telefon numarası gibi iletişim bilgileri",
+        "item2": "IP adresi, tarayıcı türü, ziyaret saati gibi teknik bilgiler",
+        "item3": "Hizmetlerimizle ilgili tercihleriniz ve talepleriniz"
+      }
+    },
+    "section3": {
+      "title": "3. BİLGİLERİN KULLANIMI",
+      "intro": "Topladığımız bilgileri aşağıdaki amaçlar için kullanabiliriz:",
+      "items": {
+        "item1": "Hizmetlerimizi sunmak ve geliştirmek",
+        "item2": "Taleplerinize yanıt vermek ve müşteri hizmetleri sağlamak",
+        "item3": "Sizinle iletişim kurmak ve bilgilendirmek",
+        "item4": "Web sitemizin güvenliğini ve işlevselliğini sağlamak"
+      }
+    },
+    "section4": {
+      "title": "4. BİLGİLERİN PAYLAŞIMI",
+      "content": "Kişisel bilgilerinizi, yasal zorunluluklar dışında, önceden izniniz olmadan üçüncü taraflarla paylaşmayız. Bilgileriniz, hizmet sağlayıcılarımız, iş ortaklarımız veya yasal mercilerle paylaşılabilir."
+    },
+    "section5": {
+      "title": "5. ÇEREZLER",
+      "content": "Web sitemiz, deneyiminizi geliştirmek için çerezler kullanabilir. Çerezler, tarayıcınız tarafından cihazınıza yerleştirilen küçük metin dosyalarıdır. Tarayıcı ayarlarınızı değiştirerek çerezleri devre dışı bırakabilirsiniz."
+    },
+    "section6": {
+      "title": "6. GÜVENLİK",
+      "content": "Kişisel verilerinizin güvenliğini sağlamak için uygun teknik ve organizasyonel önlemler alıyoruz. Ancak, internet üzerinden veri iletiminin %100 güvenli olmadığını unutmayın."
+    },
+    "section7": {
+      "title": "7. HAKLARINIZ",
+      "intro": "Kişisel verilerinizle ilgili olarak aşağıdaki haklara sahipsiniz:",
+      "items": {
+        "item1": "Verilerinize erişim talep etme",
+        "item2": "Verilerinizin düzeltilmesini veya silinmesini talep etme",
+        "item3": "Verilerinizin işlenmesine itiraz etme",
+        "item4": "Veri taşınabilirliği talep etme"
+      }
+    },
+    "section8": {
+      "title": "8. POLİTİKA DEĞİŞİKLİKLERİ",
+      "content": "Bu gizlilik politikasını herhangi bir zamanda değiştirme hakkını saklı tutuyoruz. Değişiklikler, web sitemizde yayınlandıktan sonra geçerli olacaktır."
+    },
+    "section9": {
+      "title": "9. İLETİŞİM",
+      "content": "Gizlilik politikamız hakkında sorularınız varsa, lütfen info@akbatconstruction.com adresinden bizimle iletişime geçin."
+    }
+  },
+  "TermsPage": {
+    "title": "KULLANIM KOŞULLARI",
+    "section1": {
+      "title": "1. GİRİŞ",
+      "content": "Bu web sitesini kullanarak, aşağıda belirtilen kullanım koşullarını kabul etmiş sayılırsınız. Bu koşulları kabul etmiyorsanız, lütfen sitemizi kullanmayınız."
+    },
+    "section2": {
+      "title": "2. SİTE KULLANIMI",
+      "content": "AKBAT CONSTRUCTION web sitesini kullanırken, tüm yürürlükteki yasa ve yönetmeliklere uymayı kabul edersiniz. Sitemizi yasadışı veya bu koşulları ihlal edecek şekilde kullanmanız yasaktır."
+    },
+    "section3": {
+      "title": "3. FİKRİ MÜLKİYET HAKLARI",
+      "content": "Bu sitede yer alan tüm içerik (metin, grafikler, logolar, düğme simgeleri, görseller, ses klipleri, dijital indirmeler, veri derlemeleri ve yazılım dahil) AKBAT CONSTRUCTION'ın mülkiyetindedir ve telif hakkı yasaları tarafından korunmaktadır."
+    },
+    "section4": {
+      "title": "4. SORUMLULUK REDDİ",
+      "content": "Bu sitedeki bilgiler \"olduğu gibi\" sunulmaktadır. AKBAT CONSTRUCTION, sitedeki bilgilerin doğruluğu, eksiksizliği veya güncelliği konusunda hiçbir garanti vermemektedir."
+    },
+    "section5": {
+      "title": "5. ÜÇÜNCÜ TARAF BAĞLANTILARI",
+      "content": "Sitemiz, üçüncü taraf web sitelerine bağlantılar içerebilir. Bu bağlantılar yalnızca bilgi amaçlıdır ve AKBAT CONSTRUCTION, bu sitelerin içeriği veya gizlilik politikaları üzerinde hiçbir kontrole sahip değildir."
+    },
+    "section6": {
+      "title": "6. KULLANIM KOŞULLARINDA DEĞİŞİKLİKLER",
+      "content": "AKBAT CONSTRUCTION, bu kullanım koşullarını herhangi bir zamanda değiştirme hakkını saklı tutar. Değişiklikler, web sitemizde yayınlandıktan sonra geçerli olacaktır."
+    },
+    "section7": {
+      "title": "7. İLETİŞİM",
+      "content": "Bu kullanım koşulları hakkında sorularınız varsa, lütfen info@akbatconstruction.com adresinden bizimle iletişime geçin."
+    }
+  },
+  "ServiceDetail": {
+    "turnkeyHomes": {
+      "title": "ANAHTAR TESLİM EV",
+      "description": "AKBAT CONSTRUCTION olarak, hayalinizdeki evi A'dan Z'ye inşa ediyoruz. Projelendirmeden iç dekorasyona, bahçe düzenlemesinden son detayına kadar tüm süreci profesyonel bir şekilde yönetiyoruz. Kaliteli malzeme ve işçilikle, zamanında teslim garantisiyle, bütçenize uygun çözümler sunuyoruz.",
+      "tagline": "HAYALİNİZDEKİ EVİ İNŞA EDİYORUZ",
+      "content": {
+        "paragraph1": "Anahtar teslim ev projelerimizde, modern mimari anlayışı ile fonksiyonelliği bir araya getiriyoruz. Her aşamada sizinle istişare ederek, beklentilerinizi en iyi şekilde karşılayan çözümler üretiyoruz. Kaliteli malzeme seçimi ve uzman işçilikle, uzun yıllar güvenle yaşayabileceğiniz evler inşa ediyoruz.",
+        "paragraph2": "Projelerimizde enerji verimliliğinden güvenliğe, estetik tasarımdan kullanım rahatlığına kadar her detayı düşünüyoruz. Temel kazısından başlayarak, iç dekorasyon ve peyzaj düzenlemesine kadar tüm süreci titizlikle yönetiyor, size sadece anahtarınızı teslim almak kalıyor."
+      },
+      "features": {
+        "title": "Hizmet Kapsamı",
+        "planning": "PROJE PLANLAMA",
+        "planningText": "Her projeyi detaylı bir şekilde planlıyor, ihtiyaçlarınızı ve bütçenizi göz önünde bulundurarak en uygun çözümleri sunuyoruz.",
+        "construction": "PROFESYONEL UYGULAMA",
+        "constructionText": "Uzman ekibimizle, temelinden çatısına kadar tüm inşaat sürecini titizlikle yönetiyoruz.",
+        "turnkey": "ANAHTAR TESLİM",
+        "turnkeyText": "Projenizi tüm detaylarıyla tamamlayıp, kullanıma hazır bir şekilde size teslim ediyoruz."
+      },
+      "cta": {
+        "title": "HAYALİNİZDEKİ EVE KAVUŞMAK İÇİN",
+        "description": "Sizin için en uygun çözümü birlikte belirleyelim.",
+        "button": "BİZE ULAŞIN"
+      }
+    },
+    "roofing": {
+      "title": "ÇATI MONTAJI",
+      "description": "Uzman ekibimizle çatı montajı ve onarımı hizmetleri sunuyoruz. Kaliteli malzemeler ve işçilik garantisi ile çatınızı güvence altına alıyoruz.",
+      "tagline": "ÇATINIZ BİZE EMANET",
+      "content": {
+        "paragraph1": "Çatı montajı ve onarımı konusunda uzman ekibimizle, her türlü çatı projesinde yanınızdayız. Yeni çatı montajından mevcut çatınızın onarımına, çatı izolasyonundan oluk sistemlerine kadar geniş bir yelpazede hizmet sunuyoruz.",
+        "paragraph2": "Kaliteli malzeme kullanımı ve profesyonel işçilikle, çatınızın uzun yıllar dayanıklı ve sorunsuz kalmasını sağlıyoruz. Hava koşullarına dayanıklı, enerji verimliliği yüksek çatı çözümleri ile evinizi koruyoruz."
+      },
+      "features": {
+        "title": "Hizmet Kapsamı",
+        "installation": "ÇATI MONTAJI",
+        "installationText": "Yeni çatı montajı hizmetimizle, ihtiyaçlarınıza ve bütçenize uygun çatı sistemleri kuruyoruz.",
+        "repair": "ÇATI ONARIMI",
+        "repairText": "Mevcut çatınızdaki hasarları tespit ediyor ve profesyonel onarım hizmetleri sunuyoruz.",
+        "insulation": "ÇATI İZOLASYONU",
+        "insulationText": "Çatı izolasyonu ile enerji verimliliğini artırıyor, ısı kaybını önlüyoruz."
+      },
+      "cta": {
+        "title": "ÇATI PROJENİZ İÇİN",
+        "description": "Uzman ekibimizle çatı projenizi hayata geçirelim.",
+        "button": "BİZE ULAŞIN"
+      }
+    },
+    "exteriorInsulation": {
+      "title": "Dış Cephe Mantolama",
+      "description": "Dış cephe mantolama ile evinizin enerji verimliliğini artırıyor, ısı kaybını önlüyor ve dış görünümünü güzelleştiriyoruz.",
+      "tagline": "DIŞ CEPHE MANTOLAMA HİZMETLERİ",
+      "content": {
+        "paragraph1": "Dış cephe mantolama hizmetlerimizle binanızın enerji verimliliğini artırıyor, ısı kaybını önlüyor ve dış görünümünü güzelleştiriyoruz. Kaliteli malzemeler ve uzman işçilikle, binanızın değerini artırıyoruz.",
+        "paragraph2": "Isı yalıtımı, dış cephe sıvası, dış cephe boyası, cephe onarımı ve dekoratif uygulamalar ile binanızın dış cephesini yeniliyoruz. Enerji tasarrufu sağlayan çözümlerle, ısıtma ve soğutma maliyetlerinizi düşürüyoruz."
+      },
+      "features": {
+        "title": "Hizmet Kapsamı",
+        "insulation": "Isı Yalıtımı",
+        "insulationText": "Isı yalıtımı ile enerji tasarrufu sağlar",
+        "rendering": "Dış Cephe Sıvası",
+        "renderingText": "Dış cephe sıvası ile binanızı korur",
+        "painting": "Dış Cephe Boyası",
+        "paintingText": "Dış cephe boyası ile estetik görünüm"
+      },
+      "cta": {
+        "title": "DIŞ CEPHE MANTOLAMA PROJENİZ İÇİN",
+        "description": "Uzman ekibimizle dış cephe mantolama projenizi hayata geçirelim.",
+        "button": "BİZE ULAŞIN"
+      }
+    },
+    "interiorDecoration": {
+      "title": "İç Dekorasyon",
+      "description": "İç dekorasyon hizmetlerimizle yaşam alanlarınızı yeniliyor, fonksiyonel ve estetik çözümler sunuyoruz.",
+      "tagline": "İÇ DEKORASYON HİZMETLERİ",
+      "content": {
+        "paragraph1": "İç dekorasyon hizmetlerimizle yaşam alanlarınızı yeniliyor, fonksiyonel ve estetik çözümler sunuyoruz. Kaliteli malzemeler ve uzman işçilikle, mekanlarınızı dönüştürüyoruz.",
+        "paragraph2": "İç mekan tasarımı, boya ve duvar kağıdı, zemin kaplamaları, aydınlatma çözümleri, mobilya seçimi ve aksesuar danışmanlığı ile yaşam alanlarınızı kişiselleştiriyoruz. Modern ve fonksiyonel tasarımlarla, mekanlarınızı daha yaşanabilir hale getiriyoruz."
+      },
+      "features": {
+        "title": "Hizmet Kapsamı",
+        "design": "İç Mekan Tasarımı",
+        "designText": "Fonksiyonel ve estetik iç mekan tasarımları oluşturuyoruz",
+        "painting": "Boya ve Duvar Kağıdı",
+        "paintingText": "Kaliteli boya ve duvar kağıtları ile duvarlarınızı dönüştürüyoruz",
+        "lighting": "Aydınlatma Çözümleri",
+        "lightingText": "Uygun aydınlatma çözümleri ile mükemmel ambiyans yaratıyoruz"
+      },
+      "cta": {
+        "title": "İÇ DEKORASYON PROJENİZ İÇİN",
+        "description": "Uzman ekibimizle yaşam alanlarınızı dönüştürelim.",
+        "button": "BİZE ULAŞIN"
+      }
+    },
+    "roughConstruction": {
+      "title": "Kaba İnşaat",
+      "description": "Kaba inşaat hizmetlerimizle binanızın temelinden çatısına kadar tüm yapısal unsurlarını inşa ediyoruz.",
+      "tagline": "KABA İNŞAAT HİZMETLERİ",
+      "content": {
+        "paragraph1": "Kaba inşaat hizmetlerimizle binanızın temelinden çatısına kadar tüm yapısal unsurlarını inşa ediyoruz. Kaliteli malzemeler ve uzman işçilikle, sağlam ve dayanıklı yapılar oluşturuyoruz.",
+        "paragraph2": "Temel atma, betonarme işleri, duvar örme, çatı konstrüksiyonu, yapısal izolasyon, tesisat altyapısı ve elektrik altyapısı ile binanızın sağlam temelini oluşturuyoruz. Enerji verimli ve sürdürülebilir çözümlerle, uzun yıllar dayanacak yapılar inşa ediyoruz."
+      },
+      "features": {
+        "title": "Hizmet Kapsamı",
+        "foundation": "Temel Atma",
+        "foundationText": "Binanız için sağlam temeller oluşturuyoruz",
+        "concrete": "Betonarme İşleri",
+        "concreteText": "Kaliteli betonarme işleri gerçekleştiriyoruz",
+        "electrical": "Elektrik Altyapısı",
+        "electricalText": "Güvenli ve verimli elektrik altyapıları kuruyoruz"
+      },
+      "cta": {
+        "title": "KABA İNŞAAT PROJENİZ İÇİN",
+        "description": "Uzman ekibimizle kaba inşaat projenizi hayata geçirelim.",
+        "button": "BİZE ULAŞIN"
+      }
+    },
+    "materialSales": {
+      "title": "Malzeme Satışı",
+      "description": "İnşaat ve yapı malzemeleri satışı yapıyoruz. Kaliteli ürünleri uygun fiyatlarla sunuyoruz.",
+      "tagline": "İNŞAAT MALZEMELERİ SATIŞI",
+      "content": {
+        "paragraph1": "Kaliteli inşaat malzemelerini uygun fiyatlarla satıyoruz. Geniş ürün yelpazemizle, inşaat ile ilgili tüm ihtiyaçlarınızı karşılıyoruz.",
+        "paragraph2": "Beton ve çimento, demir ve çelik, ahşap ürünler, yalıtım malzemeleri, boya ve sıva, el aletleri ve ekipmanlar, tesisat malzemeleri ve elektrik malzemeleri ile inşaat projeniz için ihtiyacınız olan tüm malzemeleri sunuyoruz."
+      },
+      "features": {
+        "title": "Ürün Kategorileri",
+        "concrete": "Beton ve Çimento",
+        "concreteText": "Kaliteli beton ve çimento ürünleri sunuyoruz",
+        "tools": "El Aletleri ve Ekipmanlar",
+        "toolsText": "Profesyonel el aletleri ve ekipmanlar satıyoruz",
+        "insulation": "Yalıtım Malzemeleri",
+        "insulationText": "Yüksek kaliteli yalıtım malzemeleri sunuyoruz"
+      },
+      "cta": {
+        "title": "İNŞAAT MALZEMELERİ İHTİYAÇLARINIZ İÇİN",
+        "description": "Kaliteli malzemeleri uygun fiyatlarla almak için bize ulaşın.",
+        "button": "BİZE ULAŞIN"
+      }
+    },
+    "windowsDoors": {
+      "title": "Pencere ve Kapı Montajı",
+      "description": "Kaliteli pencere ve kapı montajı hizmetleri sunuyoruz. Enerji verimliliği yüksek ürünlerle evinizin konforunu artırıyoruz.",
+      "tagline": "PENCERE VE KAPI MONTAJI HİZMETLERİ",
+      "content": {
+        "paragraph1": "Kaliteli pencere ve kapı montajı hizmetleri sunuyoruz. Enerji verimliliği yüksek ürünlerle evinizin konforunu artırıyor ve enerji maliyetlerinizi düşürüyoruz.",
+        "paragraph2": "Pencere montajı, kapı montajı, PVC doğrama, alüminyum doğrama, ahşap doğrama, güvenlik sistemleri ve bakım ve onarım hizmetleri ile pencere ve kapı ihtiyaçlarınız için eksiksiz çözümler sunuyoruz."
+      },
+      "features": {
+        "title": "Hizmet Kapsamı",
+        "windows": "Pencere Montajı",
+        "windowsText": "Mükemmel izolasyona sahip kaliteli pencereler monte ediyoruz",
+        "doors": "Kapı Montajı",
+        "doorsText": "Şık ve güvenli kapılar monte ediyoruz",
+        "security": "Güvenlik Sistemleri",
+        "securityText": "Modern sistemlerle evinizin güvenliğini artırıyoruz"
+      },
+      "cta": {
+        "title": "PENCERE VE KAPI İHTİYAÇLARINIZ İÇİN",
+        "description": "Kaliteli pencere ve kapı çözümleri için bize ulaşın.",
+        "button": "BİZE ULAŞIN"
+      }
+    },
+    "renovation": {
+      "title": "Tadilat ve Tamirat",
+      "description": "Tadilat ve tamirat hizmetlerimizle yaşam alanlarınızı yeniliyor, fonksiyonel ve estetik çözümler sunuyoruz.",
+      "tagline": "TADİLAT VE TAMİRAT HİZMETLERİ",
+      "content": {
+        "paragraph1": "Tadilat ve tamirat hizmetlerimizle yaşam alanlarınızı yeniliyor, fonksiyonel ve estetik çözümler sunuyoruz. Kaliteli malzemeler ve uzman işçilikle, mekanlarınızı dönüştürüyoruz.",
+        "paragraph2": "Mutfak tadilatı, banyo tadilatı, boya ve badana, zemin kaplama, elektrik tadilatı, tesisat tadilatı ve marangozluk işleri ile tadilat ihtiyaçlarınız için eksiksiz çözümler sunuyoruz."
+      },
+      "features": {
+        "title": "Hizmet Kapsamı",
+        "kitchen": "Mutfak Tadilatı",
+        "kitchenText": "Modern ve fonksiyonel tasarımlarla mutfağınızı dönüştürüyoruz",
+        "bathroom": "Banyo Tadilatı",
+        "bathroomText": "Şık ve kullanışlı banyolar oluşturuyoruz",
+        "plumbing": "Tesisat Tadilatı",
+        "plumbingText": "Profesyonel çözümlerle tesisat sorunlarınızı gideriyoruz"
+      },
+      "cta": {
+        "title": "TADİLAT İHTİYAÇLARINIZ İÇİN",
+        "description": "Kaliteli tadilat çözümleri için bize ulaşın.",
+        "button": "BİZE ULAŞIN"
+      }
+    },
+    "cta": {
+      "title": "Bu Hizmet Hakkında Bilgi Almak İster misiniz?",
+      "button": "İletişime Geçin"
+    }
+  }
+} 

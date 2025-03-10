@@ -3,11 +3,15 @@
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import { useTranslations } from 'next-intl';
 import styles from './Header.module.scss';
+import LanguageSwitcher from './LanguageSwitcher';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const t = useTranslations('Common');
+  const headerT = useTranslations('Header');
 
   useEffect(() => {
     const handleScroll = () => {
@@ -43,6 +47,7 @@ const Header = () => {
             </a>
           </div>
           <div className={styles.socialLinks}>
+            <LanguageSwitcher />
             <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
               <i className="fab fa-instagram"></i>
             </a>
@@ -72,7 +77,7 @@ const Header = () => {
           <button 
             className={`${styles.menuButton} ${isMenuOpen ? styles.active : ''}`}
             onClick={handleMenuClick}
-            aria-label="Menü"
+            aria-label={headerT('menu')}
           >
             <span></span>
             <span></span>
@@ -81,21 +86,21 @@ const Header = () => {
 
           <nav className={`${styles.nav} ${isMenuOpen ? styles.active : ''}`}>
             <ul>
-              <li><Link href="/" onClick={closeMenu}>Ana Sayfa</Link></li>
-              <li><Link href="/hakkimizda" onClick={closeMenu}>Hakkımızda</Link></li>
-              <li><Link href="/hizmetler" onClick={closeMenu}>Hizmetlerimiz</Link></li>
+              <li><Link href="/" onClick={closeMenu}>{t('home')}</Link></li>
+              <li><Link href="/hakkimizda" onClick={closeMenu}>{t('about')}</Link></li>
+              <li><Link href="/hizmetler" onClick={closeMenu}>{t('services')}</Link></li>
               <li><Link href="/projeler" onClick={closeMenu}>Projelerimiz</Link></li>
-              <li><Link href="/iletisim" onClick={closeMenu}>İletişim</Link></li>
+              <li><Link href="/iletisim" onClick={closeMenu}>{t('contact')}</Link></li>
             </ul>
           </nav>
 
           <div className={styles.cta}>
             <a href="tel:+33630508536" className={styles.phone}>
               <i className="fas fa-phone"></i>
-              <span>Bizi Arayın</span>
+              <span>{t('callUs')}</span>
             </a>
             <Link href="/iletisim" className={styles.button} onClick={closeMenu}>
-              Teklif Alın
+              {t('getQuote')}
             </Link>
           </div>
         </div>

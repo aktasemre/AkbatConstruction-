@@ -1,4 +1,9 @@
 /** @type {import('next').NextConfig} */
+const withNextIntl = require('next-intl/plugin')(
+  // Bu satır next-intl yapılandırma dosyasını belirtir
+  './i18n.ts'
+);
+
 const nextConfig = {
   images: {
     remotePatterns: [
@@ -20,4 +25,4 @@ const nextConfig = {
   },
 };
 
-module.exports = nextConfig; 
+module.exports = withNextIntl(nextConfig); 

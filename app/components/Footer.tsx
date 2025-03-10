@@ -3,35 +3,42 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { useTranslations } from 'next-intl';
+import { useParams } from 'next/navigation';
 import styles from './Footer.module.scss';
 
 const Footer = () => {
+  const t = useTranslations('Common');
+  const footerT = useTranslations('Footer');
+  const servicesT = useTranslations('ServicesPage.services');
+  const { locale } = useParams();
+
   const services = [
-    { title: 'ANAHTAR TESLİM EV', link: '/hizmetler/anahtar-teslim-ev' },
-    { title: 'ÇATI MONTAJI', link: '/hizmetler/cati-montaji' },
-    { title: 'DIŞ CEPHE MANTOLAMA', link: '/hizmetler/dis-cephe-mantolama' },
-    { title: 'İÇ DEKORASYON', link: '/hizmetler/ic-dekorasyon' },
+    { title: servicesT('turnkeyHomes'), link: `/${locale}/hizmetler/anahtar-teslim-ev` },
+    { title: servicesT('roofing'), link: `/${locale}/hizmetler/cati-montaji` },
+    { title: servicesT('exteriorInsulation'), link: `/${locale}/hizmetler/dis-cephe-mantolama` },
+    { title: servicesT('interiorDecoration'), link: `/${locale}/hizmetler/ic-dekorasyon` },
   ];
 
   const additionalServices = [
-    { title: 'KABA İNŞAAT', link: '/hizmetler/kaba-insaat' },
-    { title: 'MALZEME SATIŞI', link: '/hizmetler/malzeme-satisi' },
-    { title: 'PENCERE & KAPI MONTAJI', link: '/hizmetler/pencere-kapi-montaji' },
-    { title: 'TADİLAT & TAMİRAT', link: '/hizmetler/tadilat-tamirat' },
+    { title: servicesT('roughConstruction'), link: `/${locale}/hizmetler/kaba-insaat` },
+    { title: servicesT('materialSales'), link: `/${locale}/hizmetler/malzeme-satisi` },
+    { title: servicesT('windowsDoors'), link: `/${locale}/hizmetler/pencere-kapi-montaji` },
+    { title: servicesT('renovation'), link: `/${locale}/hizmetler/tadilat-tamirat` },
   ];
 
   const regions = [
-    { title: 'VANNES HİZMET BÖLGESİ', link: '/bolge/vannes' },
-    { title: 'RENNES HİZMET BÖLGESİ', link: '/bolge/rennes' },
-    { title: 'NANTES HİZMET BÖLGESİ', link: '/bolge/nantes' },
-    { title: 'LORIENT HİZMET BÖLGESİ', link: '/bolge/lorient' },
+    { title: 'VANNES', link: `/${locale}/bolge/vannes` },
+    { title: 'RENNES', link: `/${locale}/bolge/rennes` },
+    { title: 'NANTES', link: `/${locale}/bolge/nantes` },
+    { title: 'LORIENT', link: `/${locale}/bolge/lorient` },
   ];
 
   const additionalRegions = [
-    { title: 'PARIS HİZMET BÖLGESİ', link: '/bolge/paris' },
-    { title: 'BORDEAUX HİZMET BÖLGESİ', link: '/bolge/bordeaux' },
-    { title: 'LYON HİZMET BÖLGESİ', link: '/bolge/lyon' },
-    { title: 'MARSEILLE HİZMET BÖLGESİ', link: '/bolge/marseille' },
+    { title: 'PARIS', link: `/${locale}/bolge/paris` },
+    { title: 'BORDEAUX', link: `/${locale}/bolge/bordeaux` },
+    { title: 'LYON', link: `/${locale}/bolge/lyon` },
+    { title: 'MARSEILLE', link: `/${locale}/bolge/marseille` },
   ];
 
   return (
@@ -49,7 +56,7 @@ const Footer = () => {
           </div>
           <div className={styles.footerContent}>
             <div className={styles.footerSection}>
-              <h3>HİZMETLER</h3>
+              <h3>{footerT('services')}</h3>
               <div className={styles.linkColumns}>
                 <div className={styles.linkColumn}>
                   {services.map((service, index) => (
@@ -64,7 +71,7 @@ const Footer = () => {
               </div>
             </div>
             <div className={styles.footerSection}>
-              <h3>HİZMET BÖLGELERİ</h3>
+              <h3>{footerT('serviceAreas')}</h3>
               <div className={styles.linkColumns}>
                 <div className={styles.linkColumn}>
                   {regions.map((region, index) => (
@@ -85,19 +92,19 @@ const Footer = () => {
         <div className={styles.container}>
           <div className={styles.contactInfo}>
             <div className={styles.address}>
-              <h3>BİZİ ZİYARET EDİN</h3>
+              <h3>{footerT('address')}</h3>
               <p>8 RUE THIERS, 56000 VANNES, FRANCE</p>
               <Link href="https://maps.google.com" target="_blank" className={styles.directionLink}>
-                YOL TARİFİ ALIN →
+                {footerT('getDirections')} →
               </Link>
             </div>
             <div className={styles.contact}>
-              <h3>İLETİŞİME GEÇİN</h3>
+              <h3>{footerT('contactInfo')}</h3>
               <a href="tel:+33630508536">+33 6 30 50 85 36</a>
               <a href="mailto:info@akbatconstruction.com">info@akbatconstruction.com</a>
             </div>
             <div className={styles.social}>
-              <h3>BİZİ TAKİP EDİN</h3>
+              <h3>{footerT('followUs')}</h3>
               <div className={styles.socialLinks}>
                 <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
                   <i className="fab fa-instagram"></i>
@@ -109,10 +116,10 @@ const Footer = () => {
             </div>
           </div>
           <div className={styles.copyright}>
-            <p>© 2025 — Tum haklari saklidir - aktasemre1988@gmail.com</p>
+            <p>© 2025 — {footerT('allRightsReserved')}</p>
             <div className={styles.links}>
-              <Link href="/kullanim-kosullari">Kullanım Koşulları</Link>
-              <Link href="/gizlilik-politikasi">Gizlilik Politikası</Link>
+              <Link href={`/${locale}/kullanim-kosullari`}>{footerT('termsOfUse')}</Link>
+              <Link href={`/${locale}/gizlilik-politikasi`}>{footerT('privacyPolicy')}</Link>
             </div>
           </div>
         </div>

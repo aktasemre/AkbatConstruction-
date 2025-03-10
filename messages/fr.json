@@ -1,0 +1,446 @@
+{
+  "Common": {
+    "home": "Accueil",
+    "about": "À Propos",
+    "services": "Services",
+    "contact": "Contact",
+    "callUs": "Appelez-nous",
+    "getQuote": "Obtenir un Devis",
+    "readMore": "En Savoir Plus",
+    "viewAll": "Voir Tout",
+    "contactUs": "Contactez-nous",
+    "learnMore": "En Savoir Plus",
+    "backToHome": "Retour à l'Accueil",
+    "since": "Depuis 2000"
+  },
+  "Header": {
+    "phone": "Téléphone",
+    "email": "E-mail",
+    "menu": "Menu"
+  },
+  "Footer": {
+    "quickLinks": "Liens Rapides",
+    "services": "Nos Services",
+    "serviceAreas": "Zones de Service",
+    "address": "Adresse",
+    "getDirections": "Obtenir l'Itinéraire",
+    "contactInfo": "Coordonnées",
+    "followUs": "Suivez-nous",
+    "allRightsReserved": "Tous Droits Réservés",
+    "privacyPolicy": "Politique de Confidentialité",
+    "termsOfUse": "Conditions d'Utilisation"
+  },
+  "HomePage": {
+    "hero": {
+      "title": "Nous Construisons Votre Rêve",
+      "description": "Avec 25 ans d'expérience, nous offrons des services de construction de qualité à Vannes et ses environs.",
+      "button": "Découvrez Nos Services"
+    },
+    "intro": {
+      "title": "AKBAT CONSTRUCTION",
+      "description": "Opérant à Vannes, France depuis 25 ans, AKBAT CONSTRUCTION offre une large gamme de services, de la construction clé en main à la décoration intérieure, de l'isolation extérieure à l'installation de toiture.",
+      "stats": {
+        "experience": "Années d'Expérience",
+        "projects": "Projets Réalisés",
+        "clients": "Clients Satisfaits",
+        "team": "Membres d'Équipe"
+      }
+    },
+    "services": {
+      "title": "Nos Services",
+      "viewAll": "Voir Tous les Services"
+    },
+    "features": {
+      "quality": "Haute Qualité",
+      "onTime": "Livraison à Temps",
+      "expertise": "Équipe Experte",
+      "affordable": "Prix Abordable",
+      "warranty": "Garantie",
+      "support": "Support 24/7"
+    },
+    "projects": {
+      "title": "Nos Derniers Projets",
+      "subtitle": "Projets",
+      "description": "Voici quelques-uns de nos projets récemment achevés. La qualité et la fiabilité sont nos priorités.",
+      "button": "Voir Tous les Projets"
+    },
+    "cta": {
+      "subtitle": "Travaillez Avec Nous",
+      "title": "Réalisons Votre Projet de Rêve",
+      "button": "Contactez-nous Maintenant"
+    }
+  },
+  "AboutPage": {
+    "hero": {
+      "title": "Services de Construction de Qualité avec 25 Ans d'Expérience",
+      "description1": "Chez AKBAT CONSTRUCTION, nous offrons des services de construction de qualité à Vannes, France et ses environs depuis 2000. Sous la direction de notre fondateur Emre Aktaş, nous travaillons avec une approche centrée sur la satisfaction du client.",
+      "description2": "Nous offrons une large gamme de services, de la construction clé en main à la décoration intérieure, de l'isolation extérieure à l'installation de toiture. Avec notre équipe experte et des matériaux de qualité, nous complétons vos projets à temps et dans les limites de votre budget."
+    },
+    "experience": {
+      "title": "Expérience",
+      "years": "25",
+      "yearsText": "Années d'Expérience",
+      "projects": "500+",
+      "projectsText": "Projets Réalisés",
+      "clients": "300+",
+      "clientsText": "Clients Satisfaits"
+    },
+    "approach": {
+      "title": "Notre Approche",
+      "description": "Nous mettons la satisfaction du client au premier plan dans chaque projet. Nous maintenons une communication transparente et honnête à chaque étape, de la phase initiale à la livraison. Avec des matériaux de qualité et une main-d'œuvre experte, nous complétons vos projets à temps et dans les limites de votre budget."
+    },
+    "values": {
+      "title": "Nos Valeurs",
+      "description": "Chez AKBAT CONSTRUCTION, nous mettons en avant les valeurs suivantes dans chaque projet:",
+      "quality": "Qualité",
+      "qualityText": "Nous utilisons les matériaux de la plus haute qualité et offrons le meilleur artisanat dans chaque projet.",
+      "integrity": "Intégrité",
+      "integrityText": "Nous maintenons une communication honnête et transparente avec nos clients.",
+      "reliability": "Fiabilité",
+      "reliabilityText": "Nous complétons vos projets à temps et dans les limites de votre budget.",
+      "expertise": "Expertise",
+      "expertiseText": "Avec notre équipe experte, nous réalisons avec succès même les projets les plus complexes.",
+      "innovation": "Innovation",
+      "innovationText": "Nous utilisons les dernières technologies et méthodes pour réaliser vos projets.",
+      "sustainability": "Durabilité",
+      "sustainabilityText": "Nous créons des projets durables en utilisant des matériaux et des méthodes respectueux de l'environnement."
+    },
+    "brands": {
+      "title": "Marques avec Lesquelles Nous Travaillons",
+      "description": "L'utilisation de matériaux de qualité est très importante pour nous. C'est pourquoi nous travaillons avec les marques leaders du secteur."
+    },
+    "ceo": {
+      "quote": "Chez AKBAT CONSTRUCTION, nous mettons la satisfaction du client au premier plan dans chaque projet. Avec des matériaux de qualité et une main-d'œuvre experte, nous complétons vos projets à temps et dans les limites de votre budget.",
+      "name": "Emre Aktaş",
+      "title": "Fondateur & PDG"
+    }
+  },
+  "ServicesPage": {
+    "title": "NOS SERVICES",
+    "description1": "Chez AKBAT CONSTRUCTION, nous sommes à vos côtés avec une large gamme de services dans le secteur de la construction, des projets clé en main à la vente de matériaux, de la décoration intérieure à l'installation de toiture. Avec des matériaux de qualité et notre équipe experte, nous transformons vos espaces de vie en combinant esthétique et durabilité.",
+    "description2": "Nous visons à maintenir la satisfaction du client au plus haut niveau dans chaque projet. Chacun de nos services est fourni avec une approche professionnelle pour compléter vos projets sans problème et efficacement.",
+    "services": {
+      "turnkey": "MAISON CLÉ EN MAIN",
+      "roofing": "INSTALLATION DE TOITURE",
+      "interior": "DÉCORATION INTÉRIEURE",
+      "roughConstruction": "GROS ŒUVRE",
+      "exteriorInsulation": "ISOLATION EXTÉRIEURE",
+      "materialSales": "VENTE DE MATÉRIAUX",
+      "windowsDoors": "INSTALLATION DE FENÊTRES & PORTES",
+      "renovation": "RÉNOVATION & RÉPARATION",
+      "interiorDecoration": "DÉCORATION INTÉRIEURE",
+      "turnkeyHomes": "MAISON CLÉ EN MAIN"
+    }
+  },
+  "ContactPage": {
+    "title": "CONTACTEZ-NOUS",
+    "intro": "Chez AKBAT CONSTRUCTION, nous sommes à vos côtés pour offrir les solutions les plus appropriées pour vos projets. Contactez-nous pour vos questions, suggestions et demandes, nous vous répondrons dans les plus brefs délais.",
+    "contactInfo": "COORDONNÉES",
+    "socialMedia": "MÉDIAS SOCIAUX",
+    "mapTitle": "Emplacement d'AKBAT CONSTRUCTION",
+    "infoItems": {
+      "phone": {
+        "title": "Téléphone"
+      },
+      "address": {
+        "title": "Adresse"
+      },
+      "email": {
+        "title": "E-mail"
+      },
+      "whatsapp": {
+        "title": "WhatsApp"
+      },
+      "phoneNumber": "+33 6 30 50 85 36",
+      "addressText": "8 RUE THIERS, 56000 VANNES, FRANCE",
+      "emailAddress": "info@akbatconstruction.com",
+      "whatsappNumber": "+33 6 30 50 85 36",
+      "call": "APPELER MAINTENANT",
+      "directions": "OBTENIR L'ITINÉRAIRE",
+      "sendEmail": "ENVOYER UN E-MAIL",
+      "sendMessage": "ENVOYER UN MESSAGE"
+    },
+    "cta": {
+      "title": "OBTENEZ UN DEVIS MAINTENANT",
+      "description": "Contactez-nous maintenant pour obtenir une estimation gratuite et un devis pour vos projets.",
+      "button": "CONTACTEZ-NOUS VIA WHATSAPP"
+    }
+  },
+  "PrivacyPage": {
+    "title": "POLITIQUE DE CONFIDENTIALITÉ",
+    "section1": {
+      "title": "1. INTRODUCTION",
+      "content": "Chez AKBAT CONSTRUCTION, nous respectons votre vie privée et accordons de l'importance à la protection de vos données personnelles. Cette politique de confidentialité explique comment vos données personnelles sont collectées, utilisées et protégées lorsque vous visitez notre site web ou utilisez nos services."
+    },
+    "section2": {
+      "title": "2. INFORMATIONS COLLECTÉES",
+      "intro": "Lorsque vous visitez notre site web, remplissez des formulaires de contact ou demandez nos services, nous pouvons collecter les informations suivantes:",
+      "items": {
+        "item1": "Informations de contact telles que nom, prénom, adresse e-mail, numéro de téléphone",
+        "item2": "Informations techniques telles que adresse IP, type de navigateur, heure de visite",
+        "item3": "Vos préférences et demandes concernant nos services"
+      }
+    },
+    "section3": {
+      "title": "3. UTILISATION DES INFORMATIONS",
+      "intro": "Nous pouvons utiliser les informations collectées pour les finalités suivantes:",
+      "items": {
+        "item1": "Fournir et améliorer nos services",
+        "item2": "Répondre à vos demandes et fournir un service client",
+        "item3": "Communiquer avec vous et vous informer",
+        "item4": "Assurer la sécurité et la fonctionnalité de notre site web"
+      }
+    },
+    "section4": {
+      "title": "4. PARTAGE DES INFORMATIONS",
+      "content": "Nous ne partageons pas vos informations personnelles avec des tiers sans votre consentement préalable, sauf obligations légales. Vos informations peuvent être partagées avec nos prestataires de services, partenaires commerciaux ou autorités légales."
+    },
+    "section5": {
+      "title": "5. COOKIES",
+      "content": "Notre site web peut utiliser des cookies pour améliorer votre expérience. Les cookies sont de petits fichiers texte placés sur votre appareil par votre navigateur. Vous pouvez désactiver les cookies en modifiant les paramètres de votre navigateur."
+    },
+    "section6": {
+      "title": "6. SÉCURITÉ",
+      "content": "Nous prenons des mesures techniques et organisationnelles appropriées pour assurer la sécurité de vos données personnelles. Cependant, n'oubliez pas que la transmission de données sur Internet n'est pas 100% sécurisée."
+    },
+    "section7": {
+      "title": "7. VOS DROITS",
+      "intro": "Concernant vos données personnelles, vous avez les droits suivants:",
+      "items": {
+        "item1": "Demander l'accès à vos données",
+        "item2": "Demander la correction ou la suppression de vos données",
+        "item3": "S'opposer au traitement de vos données",
+        "item4": "Demander la portabilité des données"
+      }
+    },
+    "section8": {
+      "title": "8. MODIFICATIONS DE LA POLITIQUE",
+      "content": "Nous nous réservons le droit de modifier cette politique de confidentialité à tout moment. Les modifications seront effectives après leur publication sur notre site web."
+    },
+    "section9": {
+      "title": "9. CONTACT",
+      "content": "Si vous avez des questions concernant notre politique de confidentialité, veuillez nous contacter à info@akbatconstruction.com."
+    }
+  },
+  "TermsPage": {
+    "title": "CONDITIONS D'UTILISATION",
+    "section1": {
+      "title": "1. INTRODUCTION",
+      "content": "En utilisant ce site web, vous êtes réputé avoir accepté les conditions d'utilisation énoncées ci-dessous. Si vous n'acceptez pas ces conditions, veuillez ne pas utiliser notre site."
+    },
+    "section2": {
+      "title": "2. UTILISATION DU SITE",
+      "content": "Lorsque vous utilisez le site web d'AKBAT CONSTRUCTION, vous acceptez de vous conformer à toutes les lois et réglementations en vigueur. Il est interdit d'utiliser notre site de manière illégale ou en violation de ces conditions."
+    },
+    "section3": {
+      "title": "3. DROITS DE PROPRIÉTÉ INTELLECTUELLE",
+      "content": "Tout le contenu présent sur ce site (textes, graphiques, logos, icônes de boutons, images, clips audio, téléchargements numériques, compilations de données et logiciels) est la propriété d'AKBAT CONSTRUCTION et est protégé par les lois sur le droit d'auteur."
+    },
+    "section4": {
+      "title": "4. AVIS DE NON-RESPONSABILITÉ",
+      "content": "Les informations sur ce site sont fournies \"telles quelles\". AKBAT CONSTRUCTION ne donne aucune garantie quant à l'exactitude, l'exhaustivité ou l'actualité des informations sur le site."
+    },
+    "section5": {
+      "title": "5. LIENS VERS DES SITES TIERS",
+      "content": "Notre site peut contenir des liens vers des sites web tiers. Ces liens sont fournis uniquement à titre informatif et AKBAT CONSTRUCTION n'a aucun contrôle sur le contenu ou les politiques de confidentialité de ces sites."
+    },
+    "section6": {
+      "title": "6. MODIFICATIONS DES CONDITIONS",
+      "content": "AKBAT CONSTRUCTION se réserve le droit de modifier ces conditions d'utilisation à tout moment. Les modifications seront effectives après leur publication sur notre site web."
+    },
+    "section7": {
+      "title": "7. CONTACT",
+      "content": "Si vous avez des questions concernant nos conditions d'utilisation, veuillez nous contacter à info@akbatconstruction.com."
+    }
+  },
+  "ServiceDetail": {
+    "turnkeyHomes": {
+      "title": "MAISON CLÉ EN MAIN",
+      "description": "Chez AKBAT CONSTRUCTION, nous construisons votre maison de rêve de A à Z. Nous gérons professionnellement tout le processus, de la conception à la décoration intérieure, de l'aménagement paysager aux derniers détails. Avec des matériaux de qualité et un savoir-faire, nous offrons des solutions adaptées à votre budget avec une garantie de livraison à temps.",
+      "tagline": "NOUS CONSTRUISONS LA MAISON DE VOS RÊVES",
+      "content": {
+        "paragraph1": "Dans nos projets de maisons clé en main, nous combinons l'architecture moderne avec la fonctionnalité. En consultant avec vous à chaque étape, nous créons des solutions qui répondent au mieux à vos attentes. Avec des matériaux de qualité et un savoir-faire expert, nous construisons des maisons où vous pouvez vivre en toute sécurité pendant de nombreuses années.",
+        "paragraph2": "Dans nos projets, nous pensons à tous les détails, de l'efficacité énergétique à la sécurité, du design esthétique au confort d'utilisation. En commençant par l'excavation des fondations, nous gérons méticuleusement tout le processus jusqu'à la décoration intérieure et l'aménagement paysager, il ne vous reste plus qu'à recevoir vos clés."
+      },
+      "features": {
+        "title": "Étendue des Services",
+        "planning": "PLANIFICATION DE PROJET",
+        "planningText": "Nous planifions chaque projet en détail, en tenant compte de vos besoins et de votre budget pour offrir les solutions les plus appropriées.",
+        "construction": "APPLICATION PROFESSIONNELLE",
+        "constructionText": "Avec notre équipe d'experts, nous gérons méticuleusement tout le processus de construction, des fondations au toit.",
+        "turnkey": "CLÉ EN MAIN",
+        "turnkeyText": "Nous complétons votre projet avec tous ses détails et vous le livrons prêt à l'emploi."
+      },
+      "cta": {
+        "title": "POUR OBTENIR LA MAISON DE VOS RÊVES",
+        "description": "Déterminons ensemble la solution la plus adaptée pour vous.",
+        "button": "CONTACTEZ-NOUS"
+      }
+    },
+    "roofing": {
+      "title": "INSTALLATION DE TOITURE",
+      "description": "Nous offrons des services d'installation et de réparation de toiture avec notre équipe d'experts. Nous sécurisons votre toit avec des matériaux de qualité et une garantie de main-d'œuvre.",
+      "tagline": "VOTRE TOIT EST ENTRE DE BONNES MAINS",
+      "content": {
+        "paragraph1": "Avec notre équipe d'experts en installation et réparation de toiture, nous sommes à vos côtés pour tout type de projet de toiture. Nous offrons une large gamme de services, de l'installation de nouvelles toitures à la réparation de votre toiture existante, de l'isolation de toiture aux systèmes de gouttières.",
+        "paragraph2": "Avec des matériaux de qualité et un travail professionnel, nous assurons que votre toit reste durable et sans problème pendant de nombreuses années. Nous protégeons votre maison avec des solutions de toiture résistantes aux intempéries et à haute efficacité énergétique."
+      },
+      "features": {
+        "title": "Étendue des Services",
+        "installation": "INSTALLATION DE TOITURE",
+        "installationText": "Avec notre service d'installation de nouvelles toitures, nous installons des systèmes de toiture adaptés à vos besoins et à votre budget.",
+        "repair": "RÉPARATION DE TOITURE",
+        "repairText": "Nous identifions les dommages sur votre toiture existante et offrons des services de réparation professionnels.",
+        "insulation": "ISOLATION DE TOITURE",
+        "insulationText": "Nous augmentons l'efficacité énergétique et prévenons les pertes de chaleur grâce à l'isolation de toiture."
+      },
+      "cta": {
+        "title": "POUR VOTRE PROJET DE TOITURE",
+        "description": "Réalisons votre projet de toiture avec notre équipe d'experts.",
+        "button": "CONTACTEZ-NOUS"
+      }
+    },
+    "exteriorInsulation": {
+      "title": "Isolation Extérieure",
+      "description": "Avec l'isolation extérieure, nous augmentons l'efficacité énergétique de votre maison, prévenons les pertes de chaleur et embellissons son apparence extérieure.",
+      "tagline": "SERVICES D'ISOLATION EXTÉRIEURE",
+      "content": {
+        "paragraph1": "Avec nos services d'isolation extérieure, nous augmentons l'efficacité énergétique de votre bâtiment, prévenons les pertes de chaleur et embellissons son apparence extérieure. Avec des matériaux de qualité et un savoir-faire expert, nous augmentons la valeur de votre bâtiment.",
+        "paragraph2": "Avec l'isolation thermique, l'enduit de façade, la peinture de façade, la réparation de façade et les applications décoratives, nous rénovons l'extérieur de votre bâtiment. Avec des solutions économes en énergie, nous réduisons vos coûts de chauffage et de refroidissement."
+      },
+      "features": {
+        "title": "Étendue des Services",
+        "insulation": "Isolation Thermique",
+        "insulationText": "Économise de l'énergie grâce à l'isolation thermique",
+        "rendering": "Enduit de Façade",
+        "renderingText": "Protège votre bâtiment avec l'enduit de façade",
+        "painting": "Peinture de Façade",
+        "paintingText": "Apparence esthétique avec la peinture de façade"
+      },
+      "cta": {
+        "title": "POUR VOTRE PROJET D'ISOLATION EXTÉRIEURE",
+        "description": "Réalisons votre projet d'isolation extérieure avec notre équipe d'experts.",
+        "button": "CONTACTEZ-NOUS"
+      }
+    },
+    "interiorDecoration": {
+      "title": "Décoration Intérieure",
+      "description": "Avec nos services de décoration intérieure, nous rénovons vos espaces de vie et offrons des solutions fonctionnelles et esthétiques.",
+      "tagline": "SERVICES DE DÉCORATION INTÉRIEURE",
+      "content": {
+        "paragraph1": "Avec nos services de décoration intérieure, nous rénovons vos espaces de vie et offrons des solutions fonctionnelles et esthétiques. Avec des matériaux de qualité et un savoir-faire expert, nous transformons vos espaces.",
+        "paragraph2": "Avec la conception d'intérieur, la peinture et le papier peint, les revêtements de sol, les solutions d'éclairage, la sélection de mobilier et le conseil en accessoires, nous personnalisons vos espaces de vie. Avec des designs modernes et fonctionnels, nous rendons vos espaces plus habitables."
+      },
+      "features": {
+        "title": "Étendue des Services",
+        "design": "Conception d'Intérieur",
+        "designText": "Nous créons des designs d'intérieur fonctionnels et esthétiques",
+        "painting": "Peinture et Papier Peint",
+        "paintingText": "Nous transformons vos murs avec des peintures et papiers peints de qualité",
+        "lighting": "Solutions d'Éclairage",
+        "lightingText": "Nous créons l'ambiance parfaite avec des solutions d'éclairage appropriées"
+      },
+      "cta": {
+        "title": "POUR VOTRE PROJET DE DÉCORATION INTÉRIEURE",
+        "description": "Transformons vos espaces de vie avec notre équipe d'experts.",
+        "button": "CONTACTEZ-NOUS"
+      }
+    },
+    "roughConstruction": {
+      "title": "Gros Œuvre",
+      "description": "Avec nos services de gros œuvre, nous construisons tous les éléments structurels de votre bâtiment, des fondations au toit.",
+      "tagline": "SERVICES DE GROS ŒUVRE",
+      "content": {
+        "paragraph1": "Avec nos services de gros œuvre, nous construisons tous les éléments structurels de votre bâtiment, des fondations au toit. Avec des matériaux de qualité et un savoir-faire expert, nous créons des structures solides et durables.",
+        "paragraph2": "Avec les fondations, les travaux de béton armé, la maçonnerie, la construction de toiture, l'isolation structurelle, l'infrastructure de plomberie et l'infrastructure électrique, nous créons la base solide de votre bâtiment. Avec des solutions économes en énergie et durables, nous construisons des structures qui dureront des années."
+      },
+      "features": {
+        "title": "Étendue des Services",
+        "foundation": "Fondations",
+        "foundationText": "Nous créons des fondations solides pour votre bâtiment",
+        "concrete": "Travaux de Béton Armé",
+        "concreteText": "Nous réalisons des travaux de béton armé de qualité",
+        "electrical": "Infrastructure Électrique",
+        "electricalText": "Nous installons des infrastructures électriques sûres et efficaces"
+      },
+      "cta": {
+        "title": "POUR VOTRE PROJET DE GROS ŒUVRE",
+        "description": "Réalisons votre projet de gros œuvre avec notre équipe d'experts.",
+        "button": "CONTACTEZ-NOUS"
+      }
+    },
+    "materialSales": {
+      "title": "Vente de Matériaux",
+      "description": "Nous vendons des matériaux de construction. Nous offrons des produits de qualité à des prix abordables.",
+      "tagline": "VENTE DE MATÉRIAUX DE CONSTRUCTION",
+      "content": {
+        "paragraph1": "Nous vendons des matériaux de construction de qualité à des prix abordables. Avec notre large gamme de produits, nous répondons à tous vos besoins en matière de construction.",
+        "paragraph2": "Avec le béton et le ciment, le fer et l'acier, les produits en bois, les matériaux d'isolation, la peinture et l'enduit, les outils et équipements, les matériaux de plomberie et les matériaux électriques, nous offrons tous les matériaux dont vous avez besoin pour votre projet de construction."
+      },
+      "features": {
+        "title": "Catégories de Produits",
+        "concrete": "Béton et Ciment",
+        "concreteText": "Nous offrons des produits de béton et de ciment de qualité",
+        "tools": "Outils et Équipements",
+        "toolsText": "Nous vendons des outils et équipements professionnels",
+        "insulation": "Matériaux d'Isolation",
+        "insulationText": "Nous offrons des matériaux d'isolation de haute qualité"
+      },
+      "cta": {
+        "title": "POUR VOS BESOINS EN MATÉRIAUX DE CONSTRUCTION",
+        "description": "Contactez-nous pour obtenir des matériaux de qualité à des prix abordables.",
+        "button": "CONTACTEZ-NOUS"
+      }
+    },
+    "windowsDoors": {
+      "title": "Installation de Fenêtres et Portes",
+      "description": "Nous offrons des services d'installation de fenêtres et de portes de qualité. Nous augmentons le confort de votre maison avec des produits à haute efficacité énergétique.",
+      "tagline": "SERVICES D'INSTALLATION DE FENÊTRES ET PORTES",
+      "content": {
+        "paragraph1": "Nous offrons des services d'installation de fenêtres et de portes de qualité. Avec des produits à haute efficacité énergétique, nous augmentons le confort de votre maison et réduisons vos coûts énergétiques.",
+        "paragraph2": "Avec l'installation de fenêtres, l'installation de portes, la menuiserie PVC, la menuiserie aluminium, la menuiserie bois, les systèmes de sécurité et la maintenance et réparation, nous offrons des solutions complètes pour vos besoins en fenêtres et portes."
+      },
+      "features": {
+        "title": "Étendue des Services",
+        "windows": "Installation de Fenêtres",
+        "windowsText": "Nous installons des fenêtres de qualité avec une isolation parfaite",
+        "doors": "Installation de Portes",
+        "doorsText": "Nous installons des portes élégantes et sécurisées",
+        "security": "Systèmes de Sécurité",
+        "securityText": "Nous augmentons la sécurité de votre maison avec des systèmes modernes"
+      },
+      "cta": {
+        "title": "POUR VOS BESOINS EN FENÊTRES ET PORTES",
+        "description": "Contactez-nous pour des solutions de fenêtres et portes de qualité.",
+        "button": "CONTACTEZ-NOUS"
+      }
+    },
+    "renovation": {
+      "title": "Rénovation et Réparation",
+      "description": "Avec nos services de rénovation et de réparation, nous rénovons vos espaces de vie et offrons des solutions fonctionnelles et esthétiques.",
+      "tagline": "SERVICES DE RÉNOVATION ET RÉPARATION",
+      "content": {
+        "paragraph1": "Avec nos services de rénovation et de réparation, nous rénovons vos espaces de vie et offrons des solutions fonctionnelles et esthétiques. Avec des matériaux de qualité et un savoir-faire expert, nous transformons vos espaces.",
+        "paragraph2": "Avec la rénovation de cuisine, la rénovation de salle de bain, la peinture et le badigeon, le revêtement de sol, la rénovation électrique, la rénovation de plomberie et les travaux de menuiserie, nous offrons des solutions complètes pour vos besoins en rénovation."
+      },
+      "features": {
+        "title": "Étendue des Services",
+        "kitchen": "Rénovation de Cuisine",
+        "kitchenText": "Nous transformons votre cuisine avec des designs modernes et fonctionnels",
+        "bathroom": "Rénovation de Salle de Bain",
+        "bathroomText": "Nous créons des salles de bain élégantes et pratiques",
+        "plumbing": "Rénovation de Plomberie",
+        "plumbingText": "Nous résolvons vos problèmes de plomberie avec des solutions professionnelles"
+      },
+      "cta": {
+        "title": "POUR VOS BESOINS EN RÉNOVATION",
+        "description": "Contactez-nous pour des solutions de rénovation de qualité.",
+        "button": "CONTACTEZ-NOUS"
+      }
+    },
+    "cta": {
+      "title": "Voulez-vous en Savoir Plus sur ce Service ?",
+      "button": "Contactez-nous"
+    }
+  }
+} 
