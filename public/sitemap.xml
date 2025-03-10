@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <!-- Ana Sayfa -->
+  <url>
+    <loc>https://akbatconstruction.com/fr</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://akbatconstruction.com/fr"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://akbatconstruction.com/tr"/>
+    <lastmod>2025-03-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  <!-- Hakkımızda -->
+  <url>
+    <loc>https://akbatconstruction.com/fr/hakkimizda</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://akbatconstruction.com/fr/hakkimizda"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://akbatconstruction.com/tr/hakkimizda"/>
+    <lastmod>2025-03-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Hizmetlerimiz -->
+  <url>
+    <loc>https://akbatconstruction.com/fr/hizmetler</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://akbatconstruction.com/fr/hizmetler"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://akbatconstruction.com/tr/hizmetler"/>
+    <lastmod>2025-03-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Anahtar Teslim Ev -->
+  <url>
+    <loc>https://akbatconstruction.com/fr/hizmetler/anahtar-teslim-ev</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://akbatconstruction.com/fr/hizmetler/anahtar-teslim-ev"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://akbatconstruction.com/tr/hizmetler/anahtar-teslim-ev"/>
+    <lastmod>2025-03-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- Çatı Montajı -->
+  <url>
+    <loc>https://akbatconstruction.com/fr/hizmetler/cati-montaji</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://akbatconstruction.com/fr/hizmetler/cati-montaji"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://akbatconstruction.com/tr/hizmetler/cati-montaji"/>
+    <lastmod>2025-03-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- İç Dekorasyon -->
+  <url>
+    <loc>https://akbatconstruction.com/fr/hizmetler/ic-dekorasyon</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://akbatconstruction.com/fr/hizmetler/ic-dekorasyon"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://akbatconstruction.com/tr/hizmetler/ic-dekorasyon"/>
+    <lastmod>2025-03-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- Dış Cephe Mantolama -->
+  <url>
+    <loc>https://akbatconstruction.com/fr/hizmetler/dis-cephe-mantolama</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://akbatconstruction.com/fr/hizmetler/dis-cephe-mantolama"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://akbatconstruction.com/tr/hizmetler/dis-cephe-mantolama"/>
+    <lastmod>2025-03-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- Kaba İnşaat -->
+  <url>
+    <loc>https://akbatconstruction.com/fr/hizmetler/kaba-insaat</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://akbatconstruction.com/fr/hizmetler/kaba-insaat"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://akbatconstruction.com/tr/hizmetler/kaba-insaat"/>
+    <lastmod>2025-03-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- Malzeme Satışı -->
+  <url>
+    <loc>https://akbatconstruction.com/fr/hizmetler/malzeme-satisi</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://akbatconstruction.com/fr/hizmetler/malzeme-satisi"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://akbatconstruction.com/tr/hizmetler/malzeme-satisi"/>
+    <lastmod>2025-03-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- Pencere ve Kapı Montajı -->
+  <url>
+    <loc>https://akbatconstruction.com/fr/hizmetler/pencere-kapi-montaji</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://akbatconstruction.com/fr/hizmetler/pencere-kapi-montaji"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://akbatconstruction.com/tr/hizmetler/pencere-kapi-montaji"/>
+    <lastmod>2025-03-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- Tadilat ve Tamirat -->
+  <url>
+    <loc>https://akbatconstruction.com/fr/hizmetler/tadilat-tamirat</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://akbatconstruction.com/fr/hizmetler/tadilat-tamirat"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://akbatconstruction.com/tr/hizmetler/tadilat-tamirat"/>
+    <lastmod>2025-03-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- İletişim -->
+  <url>
+    <loc>https://akbatconstruction.com/fr/iletisim</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://akbatconstruction.com/fr/iletisim"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://akbatconstruction.com/tr/iletisim"/>
+    <lastmod>2025-03-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Gizlilik Politikası -->
+  <url>
+    <loc>https://akbatconstruction.com/fr/gizlilik-politikasi</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://akbatconstruction.com/fr/gizlilik-politikasi"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://akbatconstruction.com/tr/gizlilik-politikasi"/>
+    <lastmod>2025-03-10</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <!-- Kullanım Koşulları -->
+  <url>
+    <loc>https://akbatconstruction.com/fr/kullanim-kosullari</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://akbatconstruction.com/fr/kullanim-kosullari"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://akbatconstruction.com/tr/kullanim-kosullari"/>
+    <lastmod>2025-03-10</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+</urlset> 
