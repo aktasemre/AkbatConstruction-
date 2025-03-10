@@ -17,49 +17,49 @@ const ServicesPage = () => {
   const services = [
     {
       id: 1,
-      titleKey: 'services.turnkey',
+      titleKey: 'turnkey',
       image: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80',
       link: `/${locale}/hizmetler/anahtar-teslim-ev`
     },
     {
       id: 2,
-      titleKey: 'services.roofing',
+      titleKey: 'roofing',
       image: 'https://images.unsplash.com/photo-1635424710928-0544e8512eae?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80',
       link: `/${locale}/hizmetler/cati-montaji`
     },
     {
       id: 3,
-      titleKey: 'services.interior',
+      titleKey: 'interior',
       image: 'https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80',
       link: `/${locale}/hizmetler/ic-dekorasyon`
     },
     {
       id: 4,
-      titleKey: 'services.roughConstruction',
+      titleKey: 'roughConstruction',
       image: 'https://images.unsplash.com/photo-1541976590-713941681591?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80',
       link: `/${locale}/hizmetler/kaba-insaat`
     },
     {
       id: 5,
-      titleKey: 'services.exteriorInsulation',
+      titleKey: 'exteriorInsulation',
       image: 'https://images.unsplash.com/photo-1613490493576-7fde63acd811?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80',
       link: `/${locale}/hizmetler/dis-cephe-mantolama`
     },
     {
       id: 6,
-      titleKey: 'services.materialSales',
+      titleKey: 'materialSales',
       image: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80',
       link: `/${locale}/hizmetler/malzeme-satisi`
     },
     {
       id: 7,
-      titleKey: 'services.windowsDoors',
+      titleKey: 'windowsDoors',
       image: 'https://images.unsplash.com/photo-1534511902651-6ab0ce131f2a?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80',
       link: `/${locale}/hizmetler/pencere-kapi-montaji`
     },
     {
       id: 8,
-      titleKey: 'services.renovation',
+      titleKey: 'renovation',
       image: 'https://images.unsplash.com/photo-1621905251189-08b45d6a269e?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80',
       link: `/${locale}/hizmetler/tadilat-tamirat`
     }
