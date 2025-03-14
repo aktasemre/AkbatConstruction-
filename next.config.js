@@ -23,6 +23,9 @@ const nextConfig = {
   sassOptions: {
     includePaths: ['./app'],
   },
+  experimental: {
+    metadataBase: 'https://yourdomain.com', // Replace with your actual domain
+  },
 };
 
-module.exports = withNextIntl(nextConfig); 
+module.exports = withNextIntl(nextConfig);
