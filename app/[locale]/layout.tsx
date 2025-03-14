@@ -96,6 +96,11 @@ export default async function RootLayout({
     "name": "AKBAT CONSTRUCTION",
     "url": "https://akbatconstruction.com",
     "logo": "https://akbatconstruction.com/images/logo.png",
+    "founder": {
+      "@type": "Person",
+      "name": "Yusuf Aktas",
+      "jobTitle": "Founder & CEO"
+    },
     "sameAs": [
       "https://www.facebook.com/akbatconstruction",
       "https://www.instagram.com/akbatconstruction"

@@ -55,14 +55,14 @@ const KabaInsaatPage = () => {
 
       <section className={styles.mainContent}>
         <div className={styles.container}>
-          <h2 className={styles.tagline}>KABA İNŞAAT HİZMETLERİ</h2>
+          <h2 className={styles.tagline}>{serviceT('tagline')}</h2>
           
           <div className={styles.description}>
             <div>
-              <p>Kaba inşaat hizmetlerimizle binanızın temelinden çatısına kadar tüm yapısal unsurlarını inşa ediyoruz. Kaliteli malzemeler ve uzman işçilikle, sağlam ve dayanıklı yapılar inşa ediyoruz.</p>
+              <p>{serviceT('content.paragraph1')}</p>
             </div>
             <div>
-              <p>Temel atma, betonarme işleri, duvar örme, çatı konstrüksiyonu, yapısal izolasyon, tesisat altyapısı ve elektrik altyapısı ile binanızın kaba inşaatını tamamlıyoruz. Depreme dayanıklı yapılar inşa ederek, güvenliğinizi ön planda tutuyoruz.</p>
+              <p>{serviceT('content.paragraph2')}</p>
             </div>
           </div>
 

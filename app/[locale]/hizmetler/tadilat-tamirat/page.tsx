@@ -55,14 +55,14 @@ const TadilatTamiratPage = () => {
 
       <section className={styles.mainContent}>
         <div className={styles.container}>
-          <h2 className={styles.tagline}>TADİLAT & TAMİRAT HİZMETLERİ</h2>
+          <h2 className={styles.tagline}>{serviceT('tagline')}</h2>
           
           <div className={styles.description}>
             <div>
-              <p>Tadilat ve tamirat hizmetlerimizle yaşam alanlarınızı yeniliyor, fonksiyonel ve estetik çözümler sunuyoruz. Kaliteli malzemeler ve uzman işçilikle, mekanlarınızı dönüştürüyoruz.</p>
+              <p>{serviceT('content.paragraph1')}</p>
             </div>
             <div>
-              <p>Mutfak tadilatı, banyo tadilatı, boya ve badana, zemin kaplama, elektrik tadilatı, tesisat tadilatı ve marangozluk işleri ile yaşam alanlarınızı yeniliyoruz. Modern ve fonksiyonel tasarımlarla, mekanlarınızı daha yaşanabilir hale getiriyoruz.</p>
+              <p>{serviceT('content.paragraph2')}</p>
             </div>
           </div>
 

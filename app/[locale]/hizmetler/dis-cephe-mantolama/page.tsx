@@ -16,18 +16,18 @@ const DisCepheMantolama = () => {
   const features = [
     {
       icon: '🧊',
-      titleKey: 'insulation',
-      descriptionKey: 'insulationText'
+      titleKey: 'features.insulation',
+      descriptionKey: 'features.insulationText'
     },
     {
       icon: '🧱',
-      titleKey: 'rendering',
-      descriptionKey: 'renderingText'
+      titleKey: 'features.rendering',
+      descriptionKey: 'features.renderingText'
     },
     {
       icon: '🎨',
-      titleKey: 'painting',
-      descriptionKey: 'paintingText'
+      titleKey: 'features.painting',
+      descriptionKey: 'features.paintingText'
     }
   ];
 

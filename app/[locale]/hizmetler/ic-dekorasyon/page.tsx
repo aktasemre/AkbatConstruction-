@@ -16,24 +16,24 @@ const IcDekorasyonPage = () => {
   const features = [
     {
       icon: '🎨',
-      titleKey: 'design',
-      descriptionKey: 'designText'
+      titleKey: 'features.design',
+      descriptionKey: 'features.designText'
     },
     {
       icon: '🖌️',
-      titleKey: 'painting',
-      descriptionKey: 'paintingText'
+      titleKey: 'features.painting',
+      descriptionKey: 'features.paintingText'
     },
     {
       icon: '💡',
-      titleKey: 'lighting',
-      descriptionKey: 'lightingText'
+      titleKey: 'features.lighting',
+      descriptionKey: 'features.lightingText'
     }
   ];
 
   const images = {
-    main1: 'https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80',
-    main2: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80'
+    main1: 'https://images.unsplash.com/photo-1631679706909-1844bbd07221?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80',
+    main2: 'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80'
   };
 
   return (

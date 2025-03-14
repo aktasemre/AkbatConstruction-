@@ -55,14 +55,14 @@ const MalzemeSatisiPage = () => {
 
       <section className={styles.mainContent}>
         <div className={styles.container}>
-          <h2 className={styles.tagline}>MALZEME SATIŞI HİZMETLERİ</h2>
+          <h2 className={styles.tagline}>{serviceT('tagline')}</h2>
           
           <div className={styles.description}>
             <div>
-              <p>İnşaat ve yapı malzemeleri satışı yapıyoruz. Kaliteli ürünleri uygun fiyatlarla sunuyoruz. Projeleriniz için ihtiyacınız olan tüm malzemeleri tek bir yerden temin edebilirsiniz.</p>
+              <p>{serviceT('content.paragraph1')}</p>
             </div>
             <div>
-              <p>Beton ve çimento, demir ve çelik, ahşap ürünler, yalıtım malzemeleri, boya ve sıva, el aletleri ve ekipmanlar, tesisat malzemeleri ve elektrik malzemeleri gibi geniş bir ürün yelpazesi sunuyoruz.</p>
+              <p>{serviceT('content.paragraph2')}</p>
             </div>
           </div>
 

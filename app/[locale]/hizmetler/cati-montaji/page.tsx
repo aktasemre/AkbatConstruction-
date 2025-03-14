@@ -33,7 +33,7 @@ const CatiMontajPage = () => {
 
   const images = {
     main1: 'https://images.unsplash.com/photo-1635424710928-0544e8512eae?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80',
-    main2: 'https://images.unsplash.com/photo-1632759145351-1d170f2a9ddd?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80'
+    main2: 'https://images.unsplash.com/photo-1605152276897-4f618f831968?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80'
   };
 
   return (

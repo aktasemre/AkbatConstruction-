@@ -55,14 +55,14 @@ const PencereKapiMontajiPage = () => {
 
       <section className={styles.mainContent}>
         <div className={styles.container}>
-          <h2 className={styles.tagline}>PENCERE & KAPI MONTAJI HİZMETLERİ</h2>
+          <h2 className={styles.tagline}>{serviceT('tagline')}</h2>
           
           <div className={styles.description}>
             <div>
-              <p>Kaliteli pencere ve kapı montajı hizmetleri sunuyoruz. Enerji verimliliği yüksek ürünlerle evinizin konforunu artırıyoruz. Uzman ekibimizle, projelerinizi zamanında ve bütçenize uygun şekilde tamamlıyoruz.</p>
+              <p>{serviceT('content.paragraph1')}</p>
             </div>
             <div>
-              <p>Pencere montajı, kapı montajı, PVC doğrama, alüminyum doğrama, ahşap doğrama, güvenlik sistemleri ve bakım-onarım hizmetleri sunuyoruz. Enerji tasarrufu sağlayan çözümlerle, ısıtma ve soğutma maliyetlerinizi düşürüyoruz.</p>
+              <p>{serviceT('content.paragraph2')}</p>
             </div>
           </div>
 
