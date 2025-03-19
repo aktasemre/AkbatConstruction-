@@ -1,6 +1,5 @@
 /** @type {import('next').NextConfig} */
 const withNextIntl = require('next-intl/plugin')(
-  // Bu satır next-intl yapılandırma dosyasını belirtir
   './i18n.ts'
 );
 
@@ -22,9 +21,6 @@ const nextConfig = {
   },
   sassOptions: {
     includePaths: ['./app'],
-  },
-  experimental: {
-    metadataBase: 'https://yourdomain.com', // Replace with your actual domain
   },
 };
 

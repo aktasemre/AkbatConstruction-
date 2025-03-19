@@ -24,12 +24,22 @@ const Header = () => {
 
   const handleMenuClick = () => {
     setIsMenuOpen(!isMenuOpen);
-    document.body.style.overflow = !isMenuOpen ? 'hidden' : 'auto';
+    if (!isMenuOpen) {
+      document.body.style.overflow = 'hidden';
+      document.body.style.position = 'fixed';
+      document.body.style.width = '100%';
+    } else {
+      document.body.style.overflow = '';
+      document.body.style.position = '';
+      document.body.style.width = '';
+    }
   };
 
   const closeMenu = () => {
     setIsMenuOpen(false);
-    document.body.style.overflow = 'auto';
+    document.body.style.overflow = '';
+    document.body.style.position = '';
+    document.body.style.width = '';
   };
 
   return (
@@ -109,4 +119,4 @@ const Header = () => {
   );
 };
 
-export default Header; 
+export default Header;
