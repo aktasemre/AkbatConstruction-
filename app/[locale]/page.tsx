@@ -81,6 +81,8 @@ const HomePage = () => {
           fill
           style={{ objectFit: 'cover' }}
           priority
+          sizes="100vw"
+          quality={85}
         />
         <div className={styles.overlay}></div>
       </section>
@@ -154,11 +156,13 @@ const HomePage = () => {
             <div className={styles.projectImage}>
               <Image
                 src={projects[0].image}
-
                 alt="Proje"
                 width={600}
                 height={400}
                 style={{ objectFit: 'cover' }}
+                sizes="(max-width: 768px) 100vw, 50vw"
+                loading="lazy"
+                quality={80}
               />
             </div>
             <div className={styles.projectInfo}>
@@ -191,6 +195,9 @@ const HomePage = () => {
               width={600}
               height={400}
               style={{ objectFit: 'cover' }}
+              sizes="(max-width: 768px) 100vw, 50vw"
+              loading="lazy"
+              quality={80}
             />
           </div>
         </div>

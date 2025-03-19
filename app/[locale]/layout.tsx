@@ -26,30 +26,32 @@ export function generateMetadata({ params }: { params: { locale: string } }) {
   const meta = metadataByLocale[locale] || metadataByLocale.fr;
 
   return {
+    metadataBase: new URL('https://akbatconstruction.com'),
     title: meta.title,
     description: meta.description,
     icons: {
       icon: [
-        { url: '/images/logo.jpg' },
-        { url: '/images/logo.jpg', sizes: '16x16', type: 'image/jpg' },
-        { url: '/images/logo.jpg', sizes: '32x32', type: 'image/jpg' },
-        { url: '/images/logo.jpg', sizes: '192x192', type: 'image/jpg' },
-        { url: '/images/logo.jpg', sizes: '512x512', type: 'image/jpg' },
+        { url: 'https://akbatconstruction.com/images/logo.png' },
+        { url: 'https://akbatconstruction.com/images/logo.png', sizes: '16x16', type: 'image/png' },
+        { url: 'https://akbatconstruction.com/images/logo.png', sizes: '32x32', type: 'image/png' },
+        { url: 'https://akbatconstruction.com/images/logo.png', sizes: '192x192', type: 'image/png' },
+        { url: 'https://akbatconstruction.com/images/logo.png', sizes: '512x512', type: 'image/png' },
       ],
       apple: [
-        { url: '/images/logo.jpg' },
+        { url: 'https://akbatconstruction.com/images/logo.png' },
       ],
     },
     openGraph: {
       title: meta.title,
       description: meta.description,
-      url: 'https://akbatconstruction.com',
+      url: `https://akbatconstruction.com/${locale}`,
       siteName: 'AKBAT CONSTRUCTION',
       images: [
         {
-          url: '/images/logo.jpg',
+          url: 'https://akbatconstruction.com/images/logo.jpg',
           width: 800,
           height: 600,
+          alt: 'AKBAT CONSTRUCTION Logo',
         },
       ],
       locale: locale === 'fr' ? 'fr_FR' : 'tr_TR',
@@ -59,7 +61,7 @@ export function generateMetadata({ params }: { params: { locale: string } }) {
       card: 'summary_large_image',
       title: meta.title,
       description: meta.description,
-      images: ['/images/logo.jpg'],
+      images: ['https://akbatconstruction.com/images/logo.jpg'],
     },
     alternates: {
       canonical: `https://akbatconstruction.com/${locale}`,
@@ -96,6 +98,7 @@ export default async function RootLayout({
     "name": "AKBAT CONSTRUCTION",
     "url": "https://akbatconstruction.com",
     "logo": "https://akbatconstruction.com/images/logo.png",
+    "image": "https://akbatconstruction.com/images/logo.png",
     "founder": {
       "@type": "Person",
       "name": "Yusuf Aktas",
@@ -133,13 +136,25 @@ export default async function RootLayout({
           crossOrigin="anonymous"
           referrerPolicy="no-referrer"
         />
-        <link rel="icon" href="/images/logo.png" />
+        <Script id="font-awesome-load">
+          {`
+            document.addEventListener('DOMContentLoaded', function() {
+              const fontAwesomeLink = document.querySelector('link[href*="font-awesome"]');
+              if (fontAwesomeLink) fontAwesomeLink.setAttribute('media', 'all');
+            });
+          `}
+        </Script>
+        <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+        <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com" />
+        <link rel="icon" href="/images/logo.png" type="image/png" />
         <link rel="apple-touch-icon" href="/images/logo.png" />
         <meta name="theme-color" content="#ffffff" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <Script
           id="schema-org"
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData, null, 0) }}
+          strategy="afterInteractive"
         />
       </head>
       <body className={inter.className}>
