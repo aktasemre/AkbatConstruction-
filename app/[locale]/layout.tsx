@@ -5,6 +5,7 @@ import { Inter } from 'next/font/google';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import AnimationProvider from '../components/AnimationProvider';
+import PageTransition from '../components/PageTransition';
 import Script from 'next/script';
 
 const inter = Inter({ subsets: ['latin'] });
@@ -162,7 +163,9 @@ export default async function RootLayout({
         <NextIntlClientProvider locale={locale} messages={messages}>
           <AnimationProvider>
             <Header />
-            <main>{children}</main>
+            <PageTransition>
+              <main>{children}</main>
+            </PageTransition>
             <Footer />
           </AnimationProvider>
         </NextIntlClientProvider>

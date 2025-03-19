@@ -6,6 +6,8 @@ import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 import { useParams } from 'next/navigation';
 import styles from './page.module.scss';
+import { motion } from 'framer-motion';
+import { fadeIn, fadeInUp, fadeInLeft, fadeInRight, staggerContainer, staggerTransition } from '../utils/motionUtils';
 
 const HomePage = () => {
   const t = useTranslations('Common');
@@ -66,15 +68,24 @@ const HomePage = () => {
 
   return (
     <div className={styles.homePage}>
-      <section className={styles.hero}>
-        <div className={styles.container}>
+      <motion.section 
+        className={styles.hero}
+        initial="hidden"
+        animate="show"
+        variants={fadeIn}
+      >
+        <motion.div 
+          className={styles.container}
+          variants={fadeInUp}
+          transition={{ delay: 0.2 }}
+        >
           <span className={styles.since}>{t('since')}</span>
           <h1>{homeT('hero.title')}</h1>
           <Link href={`/${locale}/hakkimizda`} className={styles.heroButton}>
             {t('about')}
             <span className={styles.arrow}>→</span>
           </Link>
-        </div>
+        </motion.div>
         <Image
           src={heroImage}
           alt="AKBAT CONSTRUCTION"
@@ -85,75 +96,143 @@ const HomePage = () => {
           quality={85}
         />
         <div className={styles.overlay}></div>
-      </section>
+      </motion.section>
 
-      <section className={styles.intro}>
+      <motion.section 
+        className={styles.intro}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true, amount: 0.3 }}
+        variants={fadeIn}
+      >
         <div className={styles.container}>
-          <div className={styles.introContent}>
+          <motion.div 
+            className={styles.introContent}
+            variants={fadeInLeft}
+            transition={{ delay: 0.2 }}
+          >
             <h2>{homeT('intro.title')}</h2>
             <div className={styles.introText}>
               <p>{homeT('intro.description')}</p>
             </div>
-            <div className={styles.stats}>
-              <div className={styles.stat}>
+            <motion.div 
+              className={styles.stats}
+              variants={staggerContainer}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true }}
+              transition={staggerTransition(0.3, 0.2)}
+            >
+              <motion.div className={styles.stat} variants={fadeInUp}>
                 <h3>25</h3>
                 <p>{homeT('intro.stats.experience')}</p>
-              </div>
-              <div className={styles.stat}>
+              </motion.div>
+              <motion.div className={styles.stat} variants={fadeInUp}>
                 <h3>500+</h3>
                 <p>{homeT('intro.stats.projects')}</p>
-              </div>
-            </div>
-          </div>
-          <div className={styles.introDescription}>
+              </motion.div>
+            </motion.div>
+          </motion.div>
+          <motion.div 
+            className={styles.introDescription}
+            variants={fadeInRight}
+            transition={{ delay: 0.4 }}
+          >
             <p>{homeT('intro.description')}</p>
-          </div>
+          </motion.div>
         </div>
-      </section>
+      </motion.section>
 
-      <section className={styles.services}>
+      <motion.section 
+        className={styles.services}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true, amount: 0.3 }}
+        variants={fadeIn}
+      >
         <div className={styles.container}>
-          <div className={styles.servicesHeader}>
+          <motion.div 
+            className={styles.servicesHeader}
+            variants={fadeInUp}
+            transition={{ delay: 0.2 }}
+          >
             <span>{homeT('services.title')}</span>
             <Link href={`/${locale}/hizmetler`} className={styles.servicesLink}>
               {homeT('services.viewAll')}
               <span className={styles.arrow}>→</span>
             </Link>
-          </div>
-          <div className={styles.servicesList}>
+          </motion.div>
+          <motion.div 
+            className={styles.servicesList}
+            variants={staggerContainer}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true }}
+            transition={staggerTransition(0.3, 0.1)}
+          >
             {services.map((service, index) => (
-              <Link key={index} href={service.link} className={styles.serviceItem}>
-                {service.title}
-              </Link>
+              <motion.div key={index} variants={fadeInUp}>
+                <Link href={service.link} className={styles.serviceItem}>
+                  {service.title}
+                </Link>
+              </motion.div>
             ))}
-          </div>
+          </motion.div>
         </div>
-      </section>
+      </motion.section>
 
-      <section className={styles.features}>
+      <motion.section 
+        className={styles.features}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true, amount: 0.3 }}
+        variants={fadeIn}
+      >
         <div className={styles.container}>
-          <div className={styles.featuresGrid}>
-            <div className={styles.feature}>
+          <motion.div 
+            className={styles.featuresGrid}
+            variants={staggerContainer}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true }}
+            transition={staggerTransition(0.3, 0.15)}
+          >
+            <motion.div className={styles.feature} variants={fadeInUp}>
               <h3>{homeT('features.quality')}</h3>
               <span className={styles.plus}>+</span>
-            </div>
-            <div className={styles.feature}>
+            </motion.div>
+            <motion.div className={styles.feature} variants={fadeInUp}>
               <h3>{homeT('features.onTime')}</h3>
               <span className={styles.plus}>+</span>
-            </div>
-            <div className={styles.feature}>
+            </motion.div>
+            <motion.div className={styles.feature} variants={fadeInUp}>
               <h3>{homeT('features.expertise')}</h3>
               <span className={styles.plus}>+</span>
-            </div>
-          </div>
+            </motion.div>
+          </motion.div>
         </div>
-      </section>
+      </motion.section>
 
-      <section className={styles.projects}>
+      <motion.section 
+        className={styles.projects}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true, amount: 0.3 }}
+        variants={fadeIn}
+      >
         <div className={styles.container}>
-          <h2>{homeT('projects.subtitle')}</h2>
+          <motion.h2 
+            variants={fadeInUp}
+            transition={{ delay: 0.2 }}
+          >
+            {homeT('projects.subtitle')}
+          </motion.h2>
           <div className={styles.projectsContent}>
-            <div className={styles.projectImage}>
+            <motion.div 
+              className={styles.projectImage}
+              variants={fadeInLeft}
+              transition={{ delay: 0.3 }}
+            >
               <Image
                 src={projects[0].image}
                 alt="Proje"
@@ -164,8 +243,12 @@ const HomePage = () => {
                 loading="lazy"
                 quality={80}
               />
-            </div>
-            <div className={styles.projectInfo}>
+            </motion.div>
+            <motion.div 
+              className={styles.projectInfo}
+              variants={fadeInRight}
+              transition={{ delay: 0.4 }}
+            >
               <span>{homeT('projects.subtitle')}</span>
               <h3>{homeT('projects.title')}</h3>
               <p>{homeT('projects.description')}</p>
@@ -173,22 +256,36 @@ const HomePage = () => {
                 {homeT('projects.button')}
                 <span className={styles.arrow}>→</span>
               </Link>
-            </div>
+            </motion.div>
           </div>
         </div>
-      </section>
+      </motion.section>
 
-      <section className={styles.cta}>
+      <motion.section 
+        className={styles.cta}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true, amount: 0.3 }}
+        variants={fadeIn}
+      >
         <div className={styles.container}>
-          <div className={styles.ctaContent}>
+          <motion.div 
+            className={styles.ctaContent}
+            variants={fadeInLeft}
+            transition={{ delay: 0.3 }}
+          >
             <span>{homeT('cta.subtitle')}</span>
             <h2>{homeT('cta.title')}</h2>
             <Link href={`/${locale}/iletisim`} className={styles.ctaButton}>
               {homeT('cta.button')}
               <span className={styles.arrow}>→</span>
             </Link>
-          </div>
-          <div className={styles.ctaImage}>
+          </motion.div>
+          <motion.div 
+            className={styles.ctaImage}
+            variants={fadeInRight}
+            transition={{ delay: 0.4 }}
+          >
             <Image
               src={ctaImage}
               alt="Birlikte Çalışalım"
@@ -199,9 +296,9 @@ const HomePage = () => {
               loading="lazy"
               quality={80}
             />
-          </div>
+          </motion.div>
         </div>
-      </section>
+      </motion.section>
     </div>
   );
 };

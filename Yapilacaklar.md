@@ -189,6 +189,8 @@ Bu belge, AKBAT CONSTRUCTION web sitesi projesinde değiştirilmesi veya iyileş
     - Tüm sayfalar için Fransızca içerik oluşturun
     - Fransızca metinleri `/messages/fr.json` dosyasına ekleyin 
 
+
+
 ## Sayfa Geçişleri İçin Animasyon Stratejisi
 
 AKBAT CONSTRUCTION web sitesinin kullanıcı deneyimini geliştirmek için sayfa geçişlerinde animasyonlar eklemek üzere aşağıdaki stratejiyi öneriyoruz:
