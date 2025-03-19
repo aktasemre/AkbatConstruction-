@@ -31,14 +31,14 @@ export function generateMetadata({ params }: { params: { locale: string } }) {
     description: meta.description,
     icons: {
       icon: [
-        { url: 'https://akbatconstruction.com/images/logo.png' },
-        { url: 'https://akbatconstruction.com/images/logo.png', sizes: '16x16', type: 'image/png' },
-        { url: 'https://akbatconstruction.com/images/logo.png', sizes: '32x32', type: 'image/png' },
-        { url: 'https://akbatconstruction.com/images/logo.png', sizes: '192x192', type: 'image/png' },
-        { url: 'https://akbatconstruction.com/images/logo.png', sizes: '512x512', type: 'image/png' },
+        { url: 'https://akbatconstruction.com/images/logo.jpg' },
+        { url: 'https://akbatconstruction.com/images/logo.jpg', sizes: '16x16', type: 'image/jpeg' },
+        { url: 'https://akbatconstruction.com/images/logo.jpg', sizes: '32x32', type: 'image/jpeg' },
+        { url: 'https://akbatconstruction.com/images/logo.jpg', sizes: '192x192', type: 'image/jpeg' },
+        { url: 'https://akbatconstruction.com/images/logo.jpg', sizes: '512x512', type: 'image/jpeg' },
       ],
       apple: [
-        { url: 'https://akbatconstruction.com/images/logo.png' },
+        { url: 'https://akbatconstruction.com/images/logo.jpg' },
       ],
     },
     openGraph: {
@@ -97,8 +97,8 @@ export default async function RootLayout({
     "@type": "Organization",
     "name": "AKBAT CONSTRUCTION",
     "url": "https://akbatconstruction.com",
-    "logo": "https://akbatconstruction.com/images/logo.png",
-    "image": "https://akbatconstruction.com/images/logo.png",
+    "logo": "https://akbatconstruction.com/images/logo.jpg",
+    "image": "https://akbatconstruction.com/images/logo.jpg",
     "founder": {
       "@type": "Person",
       "name": "Yusuf Aktas",
@@ -146,10 +146,11 @@ export default async function RootLayout({
         </Script>
         <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
         <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com" />
-        <link rel="icon" href="/images/logo.png" type="image/png" />
-        <link rel="apple-touch-icon" href="/images/logo.png" />
+        <link rel="icon" href="/images/logo.jpg" type="image/jpeg" />
+        <link rel="apple-touch-icon" href="/images/logo.jpg" />
         <meta name="theme-color" content="#ffffff" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <Script
           id="schema-org"
           type="application/ld+json"
