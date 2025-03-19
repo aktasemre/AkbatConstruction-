@@ -188,3 +188,270 @@ Bu belge, AKBAT CONSTRUCTION web sitesi projesinde değiştirilmesi veya iyileş
     #### Adım 10: Fransızca İçerik Oluşturma
     - Tüm sayfalar için Fransızca içerik oluşturun
     - Fransızca metinleri `/messages/fr.json` dosyasına ekleyin 
+
+## Sayfa Geçişleri İçin Animasyon Stratejisi
+
+AKBAT CONSTRUCTION web sitesinin kullanıcı deneyimini geliştirmek için sayfa geçişlerinde animasyonlar eklemek üzere aşağıdaki stratejiyi öneriyoruz:
+
+### 1. Framer Motion Entegrasyonu
+
+Framer Motion, React uygulamalarında animasyon oluşturmak için en popüler ve güçlü kütüphanelerden biridir. Mevcut projemize entegre edilmesi kolay ve performans açısından verimlidir.
+
+#### Kurulum Adımı:
+```bash
+npm install framer-motion
+```
+
+### 2. Sayfa Geçiş Bileşeni Oluşturma
+
+Tüm sayfa geçişleri için kullanılacak bir `PageTransition` bileşeni oluşturacağız:
+
+```tsx
+// app/components/PageTransition.tsx
+'use client';
+
+import { motion } from 'framer-motion';
+import { usePathname } from 'next/navigation';
+
+const variants = {
+  hidden: { opacity: 0, x: 0, y: 20 },
+  enter: { opacity: 1, x: 0, y: 0 },
+  exit: { opacity: 0, x: 0, y: 20 },
+};
+
+export default function PageTransition({ children }: { children: React.ReactNode }) {
+  const pathname = usePathname();
+  
+  return (
+    <motion.div
+      key={pathname}
+      initial="hidden"
+      animate="enter"
+      exit="exit"
+      variants={variants}
+      transition={{ duration: 0.4, type: 'easeInOut' }}
+      className="page-transition-container"
+    >
+      {children}
+    </motion.div>
+  );
+}
+```
+
+### 3. Layout Dosyasına Entegrasyon
+
+Mevcut `app/[locale]/layout.tsx` dosyasını güncelleyerek her sayfa geçişinde animasyon sağlayabiliriz:
+
+```tsx
+// app/[locale]/layout.tsx içinde
+import PageTransition from '@/app/components/PageTransition';
+
+// ...diğer kodlar
+
+return (
+  <html lang={locale}>
+    <body className={inter.className}>
+      <AnimationProvider>
+        <Header />
+        <PageTransition>
+          {children}
+        </PageTransition>
+        <Footer />
+      </AnimationProvider>
+    </body>
+  </html>
+);
+```
+
+### 4. Özel Geçiş Efektleri
+
+Farklı sayfa türleri için özel geçiş efektleri tanımlayabiliriz:
+
+#### Hizmet Sayfaları İçin:
+```tsx
+// app/components/ServiceTransition.tsx
+'use client';
+
+import { motion } from 'framer-motion';
+import { usePathname } from 'next/navigation';
+
+const serviceVariants = {
+  hidden: { opacity: 0, scale: 0.98 },
+  enter: { opacity: 1, scale: 1 },
+  exit: { opacity: 0, scale: 0.98 },
+};
+
+export default function ServiceTransition({ children }: { children: React.ReactNode }) {
+  const pathname = usePathname();
+  
+  return (
+    <motion.div
+      key={pathname}
+      initial="hidden"
+      animate="enter"
+      exit="exit"
+      variants={serviceVariants}
+      transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
+    >
+      {children}
+    </motion.div>
+  );
+}
+```
+
+### 5. Bileşen Düzeyinde Animasyonlar
+
+Sayfa içindeki bileşenler için kademeli animasyonlar uygulayabiliriz:
+
+```tsx
+// Örnek kullanım
+import { motion } from 'framer-motion';
+
+const container = {
+  hidden: { opacity: 0 },
+  show: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.1
+    }
+  }
+};
+
+const item = {
+  hidden: { opacity: 0, y: 20 },
+  show: { opacity: 1, y: 0 }
+};
+
+export default function ServicesGrid() {
+  return (
+    <motion.div
+      variants={container}
+      initial="hidden"
+      animate="show"
+      className="services-grid"
+    >
+      {services.map((service, index) => (
+        <motion.div key={index} variants={item} className="service-card">
+          {/* Hizmet içeriği */}
+        </motion.div>
+      ))}
+    </motion.div>
+  );
+}
+```
+
+### 6. Sayfa Yönüne Bağlı Geçişler
+
+Kullanıcı deneyimini iyileştirmek için, navigasyon yönüne göre farklı geçiş efektleri uygulayabiliriz:
+
+```tsx
+// app/components/DirectionalTransition.tsx
+'use client';
+
+import { useState, useEffect } from 'react';
+import { motion } from 'framer-motion';
+import { usePathname } from 'next/navigation';
+
+export default function DirectionalTransition({ children }: { children: React.ReactNode }) {
+  const pathname = usePathname();
+  const [prevPath, setPrevPath] = useState('');
+  const [direction, setDirection] = useState('forward');
+  
+  useEffect(() => {
+    if (prevPath === '') {
+      setPrevPath(pathname);
+      return;
+    }
+    
+    // Sayfa derinliğini kontrol et
+    const prevDepth = (prevPath.match(/\//g) || []).length;
+    const currentDepth = (pathname.match(/\//g) || []).length;
+    
+    if (prevDepth < currentDepth) {
+      setDirection('forward');
+    } else if (prevDepth > currentDepth) {
+      setDirection('backward');
+    } else {
+      // Aynı derinlikte - yol adı karşılaştırması yap
+      setDirection(prevPath < pathname ? 'forward' : 'backward');
+    }
+    
+    setPrevPath(pathname);
+  }, [pathname]);
+  
+  const variants = {
+    forward: {
+      hidden: { opacity: 0, x: 50 },
+      enter: { opacity: 1, x: 0 },
+      exit: { opacity: 0, x: -50 },
+    },
+    backward: {
+      hidden: { opacity: 0, x: -50 },
+      enter: { opacity: 1, x: 0 },
+      exit: { opacity: 0, x: 50 },
+    },
+  };
+  
+  return (
+    <motion.div
+      key={pathname}
+      initial="hidden"
+      animate="enter"
+      exit="exit"
+      variants={variants[direction]}
+      transition={{ duration: 0.3, ease: "easeInOut" }}
+    >
+      {children}
+    </motion.div>
+  );
+}
+```
+
+### 7. Performans Optimizasyonu
+
+Animasyonların performansını optimize etmek için şunları yapmalıyız:
+
+- CSS transform ve opacity özelliklerini kullanarak GPU hızlandırmasından faydalanma
+- Karmaşık animasyonları sadece masaüstü cihazlarda etkinleştirme
+- Tüm animasyonlar için `will-change` CSS özelliğini kullanma
+
+### 8. Erişilebilirlik
+
+Animasyonları erişilebilir hale getirmek için:
+
+```tsx
+// Kullanıcı tercihleri için animasyonları devre dışı bırakma
+// app/components/PageTransition.tsx içinde
+
+import { useReducedMotion } from 'framer-motion';
+
+export default function PageTransition({ children }) {
+  const shouldReduceMotion = useReducedMotion();
+  
+  const variants = shouldReduceMotion 
+    ? {
+        hidden: { opacity: 0 },
+        enter: { opacity: 1 },
+        exit: { opacity: 0 },
+      }
+    : {
+        hidden: { opacity: 0, y: 20 },
+        enter: { opacity: 1, y: 0 },
+        exit: { opacity: 0, y: 20 },
+      };
+  
+  // ...geri kalan kod
+}
+```
+
+### 9. Uygulama Planı
+
+1. Framer Motion'ı projeye ekle
+2. Temel sayfa geçiş bileşenini oluştur
+3. Layout dosyasına entegre et
+4. Farklı sayfa türleri için özel geçişler geliştir
+5. Sayfa içi bileşenler için kademeli animasyonlar ekle
+6. Tarayıcı performansını test et ve optimize et
+7. Erişilebilirlik uyarlamalarını ekle
+
+Bu strateji, modern web geliştirme standartlarına uygun olarak AKBAT CONSTRUCTION web sitesinde sayfa geçişleri için profesyonel, akıcı ve duyarlı animasyonlar sağlayacaktır. 
