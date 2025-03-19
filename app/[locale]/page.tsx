@@ -50,19 +50,19 @@ const HomePage = () => {
 
   const projects = [
     {
-      image: 'https://images.unsplash.com/photo-1613490493576-7fde63acd811?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80',
-      title: 'MODERN VİLLA PROJESİ',
+      image: 'https://images.unsplash.com/photo-1599427303058-f04cbcf4756f?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80',
+      title: 'FRANSIZ TARZI VİLLA PROJESİ',
       description: 'Fransız tarzı modern villa projemiz, lüks yaşam standartlarını en üst seviyede sunuyor.'
     },
     {
-      image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80',
+      image: 'https://images.unsplash.com/photo-1558036117-15d82a90b9b1?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80',
       title: 'LÜKS KONUT PROJESİ',
       description: 'Özel tasarım detayları ve kaliteli malzemelerle inşa edilen lüks konut projelerimiz.'
     }
   ];
 
   const heroImage = 'https://images.unsplash.com/photo-1600566753151-384129cf4e3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80';
-  const ctaImage = 'https://images.unsplash.com/photo-1600573472592-401b489a3cdc?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80';
+  const ctaImage = 'https://images.unsplash.com/photo-1576941089067-2de3c901e126?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80';
 
   return (
     <div className={styles.homePage}>
@@ -153,7 +153,8 @@ const HomePage = () => {
           <div className={styles.projectsContent}>
             <div className={styles.projectImage}>
               <Image
-                src="/images/projects/project-1.jpg"
+                src={projects[0].image}
+
                 alt="Proje"
                 width={600}
                 height={400}
