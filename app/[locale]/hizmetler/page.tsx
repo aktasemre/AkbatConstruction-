@@ -7,8 +7,8 @@ import { useTranslations } from 'next-intl';
 import { useParams } from 'next/navigation';
 import styles from './page.module.scss';
 import { motion } from 'framer-motion';
-import ServiceTransition from '../../components/ServiceTransition';
 import { fadeIn, fadeInUp, staggerContainer, staggerTransition } from '../../utils/motionUtils';
+import { getAnimationClass } from '../../utils/animations';
 
 const ServicesPage = () => {
   const t = useTranslations('Common');
@@ -69,99 +69,102 @@ const ServicesPage = () => {
   ];
 
   return (
-    <ServiceTransition>
-      <div className={styles.servicesPage}>
-        <motion.section 
-          className={styles.hero}
-          initial="hidden"
-          animate="show"
-          variants={fadeIn}
-        >
-          <div className={styles.container}>
-            <motion.h1 variants={fadeInUp} transition={{ delay: 0.2 }}>
-              {servicesPageT('title')}
-            </motion.h1>
-            <motion.div 
-              className={styles.description}
-              variants={staggerContainer}
-              initial="hidden"
-              animate="show"
-              transition={staggerTransition(0.3, 0.2)}
-            >
-              <motion.div className={styles.leftContent} variants={fadeInUp}>
-                <p>{servicesPageT('description1')}</p>
-              </motion.div>
-              <motion.div className={styles.rightContent} variants={fadeInUp}>
-                <p>{servicesPageT('description2')}</p>
-              </motion.div>
+    <div className={`${styles.servicesPage} ${getAnimationClass('fadeIn')}`} style={{ width: '100%', overflowX: 'hidden' }}>
+      <motion.section 
+        className={styles.hero}
+        initial="hidden"
+        animate="show"
+        variants={fadeIn}
+        style={{ width: '100%' }}
+      >
+        <div className={styles.container} style={{ width: '100%', maxWidth: '1400px' }}>
+          <motion.h1 variants={fadeInUp} transition={{ delay: 0.2 }}>
+            {servicesPageT('title')}
+          </motion.h1>
+          <motion.div 
+            className={styles.description}
+            variants={staggerContainer}
+            initial="hidden"
+            animate="show"
+            transition={staggerTransition(0.3, 0.2)}
+            style={{ width: '100%' }}
+          >
+            <motion.div className={styles.leftContent} variants={fadeInUp}>
+              <p>{servicesPageT('description1')}</p>
             </motion.div>
-          </div>
-        </motion.section>
+            <motion.div className={styles.rightContent} variants={fadeInUp}>
+              <p>{servicesPageT('description2')}</p>
+            </motion.div>
+          </motion.div>
+        </div>
+      </motion.section>
 
-        <motion.section 
-          className={styles.services}
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: true, amount: 0.1 }}
-          variants={fadeIn}
-        >
-          <div className={styles.container}>
-            <motion.div 
-              className={styles.servicesGrid}
-              variants={staggerContainer}
-              initial="hidden"
-              whileInView="show"
-              viewport={{ once: true }}
-              transition={staggerTransition(0.2, 0.1)}
-            >
-              {services.map((service) => (
-                <motion.div key={service.id} variants={fadeInUp}>
-                  <Link href={service.link} className={styles.serviceCard}>
-                    <div className={styles.serviceImage}>
-                      <Image
-                        src={service.image}
-                        alt={servicesT(service.titleKey)}
-                        width={600}
-                        height={400}
-                        style={{ objectFit: 'cover' }}
-                        priority={service.id <= 4}
-                        quality={85}
-                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                      />
-                    </div>
-                    <h3>{servicesT(service.titleKey)}</h3>
-                  </Link>
-                </motion.div>
-              ))}
-            </motion.div>
-          </div>
-        </motion.section>
+      <motion.section 
+        className={styles.services}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true, amount: 0.1 }}
+        variants={fadeIn}
+        style={{ width: '100%' }}
+      >
+        <div className={styles.container} style={{ width: '100%', maxWidth: '1400px' }}>
+          <motion.div 
+            className={styles.servicesGrid}
+            variants={staggerContainer}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true }}
+            transition={staggerTransition(0.2, 0.1)}
+            style={{ width: '100%' }}
+          >
+            {services.map((service) => (
+              <motion.div key={service.id} variants={fadeInUp} style={{ width: '100%' }}>
+                <Link href={service.link} className={styles.serviceCard} style={{ width: '100%' }}>
+                  <div className={styles.serviceImage} style={{ width: '100%' }}>
+                    <Image
+                      src={service.image}
+                      alt={servicesT(service.titleKey)}
+                      width={600}
+                      height={400}
+                      style={{ objectFit: 'cover', width: '100%', height: '100%' }}
+                      priority={service.id <= 4}
+                      quality={85}
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    />
+                  </div>
+                  <h3>{servicesT(service.titleKey)}</h3>
+                </Link>
+              </motion.div>
+            ))}
+          </motion.div>
+        </div>
+      </motion.section>
 
-        <motion.section 
-          className={styles.cta}
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: true, amount: 0.3 }}
-          variants={fadeIn}
-          transition={{ delay: 0.3 }}
-        >
-          <div className={styles.container}>
-            <motion.h2 variants={fadeInUp} transition={{ delay: 0.4 }}>
-              AKBAT CONSTRUCTION
-            </motion.h2>
-            <motion.p variants={fadeInUp} transition={{ delay: 0.5 }}>
-              {t('since')}
-            </motion.p>
-            <motion.div variants={fadeInUp} transition={{ delay: 0.6 }}>
-              <Link href={`/${locale}/iletisim`} className={styles.button}>
-                {t('contactUs')}
-                <span className={styles.arrow}>→</span>
-              </Link>
-            </motion.div>
-          </div>
-        </motion.section>
-      </div>
-    </ServiceTransition>
+      <motion.section 
+        className={styles.cta}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true, amount: 0.3 }}
+        variants={fadeIn}
+        transition={{ delay: 0.3 }}
+        style={{ width: '100%' }}
+      >
+        <div className={styles.container} style={{ width: '100%', maxWidth: '1400px' }}>
+          <motion.h2 variants={fadeInUp} transition={{ delay: 0.4 }}>
+            AKBAT CONSTRUCTION
+          </motion.h2>
+          <motion.p variants={fadeInUp} transition={{ delay: 0.5 }}>
+            {t('since')}
+          </motion.p>
+          <motion.div variants={fadeInUp} transition={{ delay: 0.6 }}>
+            <Link href={`/${locale}/iletisim`} className={styles.button}>
+              {t('contactUs')}
+              <span className={styles.arrow}>→</span>
+            </Link>
+          </motion.div>
+        </div>
+      </motion.section>
+    </div>
   );
 };
 

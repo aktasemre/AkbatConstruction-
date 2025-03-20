@@ -1,6 +1,19 @@
 .servicesPage {
   padding-top: 80px;
   animation: fadeIn 1s ease-out;
+  width: 100%;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  position: relative;
+  min-height: calc(100vh - 80px);
+
+  &.animate-fadeIn {
+    animation: fadeIn 1.2s ease-out;
+  }
+
+  &.animate-slideInUp {
+    animation: slideInUp 1s ease-out;
+  }
 
   @keyframes fadeIn {
     from {
@@ -11,16 +24,31 @@
     }
   }
 
+  @keyframes slideInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
   .container {
     max-width: 1400px;
+    width: 100%;
     margin: 0 auto;
     padding: 0 2rem;
+    box-sizing: border-box;
+    overflow-x: hidden;
   }
 
   .breadcrumb {
     padding: 1rem 0;
     color: #666;
     font-size: 0.9rem;
+    width: 100%;
 
     a {
       color: #FF5722;
@@ -37,6 +65,25 @@
     padding: 4rem 0;
     color: white;
     animation: slideInUp 1s ease-out;
+    width: 100%;
+    overflow-x: hidden;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(45deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.4) 100%);
+      z-index: 1;
+    }
+
+    .container {
+      position: relative;
+      z-index: 2;
+    }
 
     @keyframes slideInUp {
       from {
@@ -54,12 +101,25 @@
       font-weight: 700;
       margin-bottom: 2rem;
       animation: fadeIn 1s ease-out 0.5s backwards;
+      position: relative;
+      
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: -10px;
+        left: 0;
+        width: 80px;
+        height: 3px;
+        background: #FF5722;
+      }
     }
 
     .description {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 4rem;
+      width: 100%;
+      overflow-x: hidden;
 
       p {
         font-size: 1.1rem;
@@ -72,11 +132,14 @@
 
   .services {
     padding: 4rem 0;
+    width: 100%;
+    overflow-x: hidden;
 
     .servicesGrid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 2rem;
+      width: 100%;
     }
 
     .serviceCard {
@@ -87,6 +150,21 @@
       box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
       transition: all 0.3s ease;
       animation: fadeInUp 1s ease-out;
+      width: 100%;
+      transform-origin: center bottom;
+      
+      &:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+
+        .serviceImage img {
+          transform: scale(1.1);
+        }
+
+        h3 {
+          color: #FF5722;
+        }
+      }
 
       @keyframes fadeInUp {
         from {
@@ -99,25 +177,29 @@
         }
       }
 
-      &:hover {
-        transform: translateY(-10px);
-
-        .serviceImage img {
-          transform: scale(1.1);
-        }
-
-        h3 {
-          color: #FF5722;
-        }
-      }
-
       .serviceImage {
         position: relative;
         height: 250px;
         overflow: hidden;
+        width: 100%;
+
+        &::after {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background: rgba(0, 0, 0, 0.2);
+          opacity: 0;
+          transition: opacity 0.3s ease;
+        }
 
         img {
           transition: transform 0.5s ease;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
         }
       }
 
@@ -137,6 +219,19 @@
     padding: 4rem 0;
     text-align: center;
     animation: fadeIn 1s ease-out;
+    width: 100%;
+    overflow-x: hidden;
+    position: relative;
+    
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: linear-gradient(to right, transparent, #FF5722, transparent);
+    }
 
     h2 {
       font-size: 2rem;
@@ -202,8 +297,29 @@
   }
 }
 
+.transition-fade {
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.animate-fadeIn {
+  animation: fadeIn 1s ease-out;
+}
+
+.animate-fadeInUp {
+  animation: fadeInUp 1s ease-out;
+}
+
+.animate-slideInUp {
+  animation: slideInUp 1s ease-out;
+}
+
 @media (max-width: 1200px) {
   .servicesPage {
+    .container {
+      max-width: 100%;
+      padding: 0 1.5rem;
+    }
+    
     .services {
       .servicesGrid {
         grid-template-columns: repeat(2, 1fr);
@@ -216,6 +332,7 @@
   .servicesPage {
     .container {
       padding: 0 1rem;
+      max-width: 100%;
     }
 
     .hero {
@@ -236,6 +353,7 @@
 
       .servicesGrid {
         grid-template-columns: 1fr;
+        width: 100%;
       }
 
       .serviceCard {
