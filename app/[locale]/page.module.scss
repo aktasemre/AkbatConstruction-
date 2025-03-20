@@ -236,6 +236,11 @@
         transition: all 0.3s ease;
         position: relative;
         overflow: hidden;
+        min-height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
 
         &::before {
           content: '';
@@ -538,6 +543,10 @@
     .services {
       .servicesList {
         grid-template-columns: 1fr;
+        
+        .serviceItem {
+          min-height: 80px;
+        }
       }
     }
 
@@ -601,10 +610,13 @@
       }
       
       .servicesList {
-        gap: 1rem;
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
         
         .serviceItem {
           padding: 1.5rem;
+          min-height: 70px;
+          font-size: 0.95rem;
         }
       }
     }
@@ -694,6 +706,18 @@
       .ctaContent {
         h2 {
           font-size: 1.8rem;
+        }
+      }
+    }
+    
+    .services {
+      .servicesList {
+        gap: 1rem;
+        
+        .serviceItem {
+          padding: 1rem;
+          min-height: 60px;
+          font-size: 0.9rem;
         }
       }
     }

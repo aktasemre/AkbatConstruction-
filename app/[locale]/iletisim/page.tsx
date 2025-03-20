@@ -7,6 +7,7 @@ import styles from './page.module.scss';
 import { motion } from 'framer-motion';
 import DirectionalTransition from '../../components/DirectionalTransition';
 import { fadeIn, fadeInUp, fadeInLeft, fadeInRight, staggerContainer, staggerTransition } from '../../utils/motionUtils';
+import { useParams } from 'next/navigation';
 
 const ContactPage = () => {
   const t = useTranslations('Common');
