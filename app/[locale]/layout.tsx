@@ -7,6 +7,7 @@ import Footer from '../components/Footer';
 import AnimationProvider from '../components/AnimationProvider';
 import PageTransition from '../components/PageTransition';
 import Script from 'next/script';
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -167,6 +168,7 @@ export default async function RootLayout({
               <main>{children}</main>
             </PageTransition>
             <Footer />
+            <SpeedInsights />
           </AnimationProvider>
         </NextIntlClientProvider>
       </body>
