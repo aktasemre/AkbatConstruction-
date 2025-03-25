@@ -189,271 +189,103 @@ Bu belge, AKBAT CONSTRUCTION web sitesi projesinde değiştirilmesi veya iyileş
     - Tüm sayfalar için Fransızca içerik oluşturun
     - Fransızca metinleri `/messages/fr.json` dosyasına ekleyin 
 
-
-
 ## Sayfa Geçişleri İçin Animasyon Stratejisi
 
 AKBAT CONSTRUCTION web sitesinin kullanıcı deneyimini geliştirmek için sayfa geçişlerinde animasyonlar eklemek üzere aşağıdaki stratejiyi öneriyoruz:
 
-### 1. Framer Motion Entegrasyonu
+### 1. Framer Motion Entegrasyonu (Uygulandı ✅)
 
-Framer Motion, React uygulamalarında animasyon oluşturmak için en popüler ve güçlü kütüphanelerden biridir. Mevcut projemize entegre edilmesi kolay ve performans açısından verimlidir.
+Framer Motion kütüphanesi projeye başarıyla entegre edildi.
 
-#### Kurulum Adımı:
-```bash
-npm install framer-motion
-```
+### 2. Animasyon Bileşenleri Oluşturma (Uygulandı ✅)
 
-### 2. Sayfa Geçiş Bileşeni Oluşturma
+Eksik animasyon bileşenleri (`FadeTransition`, `SlideTransition`, `ScaleTransition`) oluşturuldu ve `app/components` klasörüne eklendi.
 
-Tüm sayfa geçişleri için kullanılacak bir `PageTransition` bileşeni oluşturacağız:
+### 3. Animasyon Sağlayıcı Bileşeni (Uygulandı ✅)
 
-```tsx
-// app/components/PageTransition.tsx
-'use client';
+`AnimationProvider` bileşeni oluşturuldu ve `app/[locale]/layout.tsx` dosyasına entegre edildi.
 
-import { motion } from 'framer-motion';
-import { usePathname } from 'next/navigation';
+### 4. Sayfa Bileşenlerini Sarmalama (Uygulandı ✅)
 
-const variants = {
-  hidden: { opacity: 0, x: 0, y: 20 },
-  enter: { opacity: 1, x: 0, y: 0 },
-  exit: { opacity: 0, x: 0, y: 20 },
-};
+Ana sayfa (`app/[locale]/page.tsx`), hizmetler sayfası (`app/[locale]/hizmetler/page.tsx`), hakkımızda sayfası (`app/[locale]/hakkimizda/page.tsx`) ve iletişim sayfası (`app/[locale]/iletisim/page.tsx`) bileşenleri `FadeTransition` ile sarmalandı.
 
-export default function PageTransition({ children }: { children: React.ReactNode }) {
-  const pathname = usePathname();
-  
-  return (
-    <motion.div
-      key={pathname}
-      initial="hidden"
-      animate="enter"
-      exit="exit"
-      variants={variants}
-      transition={{ duration: 0.4, type: 'easeInOut' }}
-      className="page-transition-container"
-    >
-      {children}
-    </motion.div>
-  );
-}
-```
+### 5. Varsayılan Animasyonlar (Uygulandı ✅)
 
-### 3. Layout Dosyasına Entegrasyon
+Tüm sayfa bileşenleri varsayılan animasyon olan `FadeTransition` ile sarmalandı.
 
-Mevcut `app/[locale]/layout.tsx` dosyasını güncelleyerek her sayfa geçişinde animasyon sağlayabiliriz:
+### 6. Özel Animasyonlar (Kısmen Uygulandı ⚠️)
 
-```tsx
-// app/[locale]/layout.tsx içinde
-import PageTransition from '@/app/components/PageTransition';
+Çatı montajı hizmeti sayfası (`app/[locale]/hizmetler/cati-montaji/page.tsx`) özel bir animasyon olan `SlideTransition` ile sarmalandı.
 
-// ...diğer kodlar
+Diğer hizmet sayfaları için de özel animasyonlar uygulanabilir.
 
-return (
-  <html lang={locale}>
-    <body className={inter.className}>
-      <AnimationProvider>
-        <Header />
-        <PageTransition>
-          {children}
-        </PageTransition>
-        <Footer />
-      </AnimationProvider>
-    </body>
-  </html>
-);
-```
+### Uygulama Adımları
 
-### 4. Özel Geçiş Efektleri
+1. ✅ `FadeTransition`, `SlideTransition` ve `ScaleTransition` bileşenleri oluşturuldu ve `app/components` klasörüne eklendi.
+2. ✅ Tüm sayfa bileşenleri varsayılan animasyon bileşeni olan `FadeTransition` ile sarmalandı.
+3. ⚠️ Çatı montajı hizmeti sayfası için özel animasyon (`SlideTransition`) uygulandı. Diğer hizmet sayfaları için de özel animasyonlar eklenebilir.
+4. Animasyonların beklendiği gibi çalıştığından emin olmak için tüm sayfaları ve geçişleri test edin.
+5. Performans sorunları olup olmadığını kontrol edin ve gerekirse optimizasyon yapın.
 
-Farklı sayfa türleri için özel geçiş efektleri tanımlayabiliriz:
+Bu adımları tamamladıktan sonra, AKBAT CONSTRUCTION web sitesi akıcı ve ilgi çekici sayfa geçişlerine sahip olacaktır. Kullanıcı deneyimi önemli ölçüde iyileşecek ve sitenin genel kalitesi artacaktır.
 
-#### Hizmet Sayfaları İçin:
-```tsx
-// app/components/ServiceTransition.tsx
-'use client';
+## Performans İyileştirmeleri
 
-import { motion } from 'framer-motion';
-import { usePathname } from 'next/navigation';
+Web sitesinin performansını artırmak için aşağıdaki iyileştirmeleri yapmanızı öneririm:
 
-const serviceVariants = {
-  hidden: { opacity: 0, scale: 0.98 },
-  enter: { opacity: 1, scale: 1 },
-  exit: { opacity: 0, scale: 0.98 },
-};
+### 1. Görüntü Optimizasyonu
 
-export default function ServiceTransition({ children }: { children: React.ReactNode }) {
-  const pathname = usePathname();
-  
-  return (
-    <motion.div
-      key={pathname}
-      initial="hidden"
-      animate="enter"
-      exit="exit"
-      variants={serviceVariants}
-      transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
-    >
-      {children}
-    </motion.div>
-  );
-}
-```
+- Next.js'in yerleşik `Image` bileşenini kullanarak görüntüleri optimize edin.
+- Görüntüleri WebP veya AVIF formatlarında sunun.
+- Uygun `width`, `height` ve `quality` özelliklerini belirtin.
+- Kritik görüntüler için `priority` özelliğini kullanın.
 
-### 5. Bileşen Düzeyinde Animasyonlar
+### 2. Kod Bölümleme
 
-Sayfa içindeki bileşenler için kademeli animasyonlar uygulayabiliriz:
+- Dinamik import kullanarak kod bölümleme yapın.
+- Sayfa bazında kod bölümleme için Next.js'in dinamik import özelliğini kullanın.
+- Büyük kütüphaneleri veya bileşenleri isteğe bağlı olarak yükleyin.
 
-```tsx
-// Örnek kullanım
-import { motion } from 'framer-motion';
+### 3. Gereksiz Render'ları Önleme
 
-const container = {
-  hidden: { opacity: 0 },
-  show: {
-    opacity: 1,
-    transition: {
-      staggerChildren: 0.1
-    }
-  }
-};
+- `React.memo`, `useMemo` ve `useCallback` kullanarak gereksiz render'ları önleyin.
+- Sık değişmeyen verileri `useMemo` ile önbelleğe alın.
+- Callback fonksiyonlarını `useCallback` ile sabitleyin.
 
-const item = {
-  hidden: { opacity: 0, y: 20 },
-  show: { opacity: 1, y: 0 }
-};
+### 4. Lazy Loading
 
-export default function ServicesGrid() {
-  return (
-    <motion.div
-      variants={container}
-      initial="hidden"
-      animate="show"
-      className="services-grid"
-    >
-      {services.map((service, index) => (
-        <motion.div key={index} variants={item} className="service-card">
-          {/* Hizmet içeriği */}
-        </motion.div>
-      ))}
-    </motion.div>
-  );
-}
-```
+- Görüntüler, videolar ve diğer ağır içerikler için lazy loading uygulayın.
+- `next/image` bileşeninin `loading="lazy"` özelliğini kullanın.
+- İçeriği görüntü alanına girdiğinde yüklemek için kütüphaneler kullanın (ör. `react-lazy-load-image-component`).
 
-### 6. Sayfa Yönüne Bağlı Geçişler
+### 5. Önbelleğe Alma
 
-Kullanıcı deneyimini iyileştirmek için, navigasyon yönüne göre farklı geçiş efektleri uygulayabiliriz:
+- Sık kullanılan verileri önbelleğe almak için `react-query` veya `swr` gibi kütüphaneleri kullanın.
+- Server tarafında önbelleğe alma için Next.js'in `getStaticProps` veya `getServerSideProps` yöntemlerini kullanın.
+- CDN önbelleğe alma için `Cache-Control` ve `ETag` başlıklarını kullanın.
 
-```tsx
-// app/components/DirectionalTransition.tsx
-'use client';
+### 6. Paket Boyutunu Küçültme
 
-import { useState, useEffect } from 'react';
-import { motion } from 'framer-motion';
-import { usePathname } from 'next/navigation';
+- Kullanılmayan kütüphane ve bileşenleri kaldırın.
+- Kod sıkıştırma için `terser` veya `esbuild` kullanın.
+- Gereksiz CSS kodlarını kaldırmak için `PurgeCSS` kullanın.
 
-export default function DirectionalTransition({ children }: { children: React.ReactNode }) {
-  const pathname = usePathname();
-  const [prevPath, setPrevPath] = useState('');
-  const [direction, setDirection] = useState('forward');
-  
-  useEffect(() => {
-    if (prevPath === '') {
-      setPrevPath(pathname);
-      return;
-    }
-    
-    // Sayfa derinliğini kontrol et
-    const prevDepth = (prevPath.match(/\//g) || []).length;
-    const currentDepth = (pathname.match(/\//g) || []).length;
-    
-    if (prevDepth < currentDepth) {
-      setDirection('forward');
-    } else if (prevDepth > currentDepth) {
-      setDirection('backward');
-    } else {
-      // Aynı derinlikte - yol adı karşılaştırması yap
-      setDirection(prevPath < pathname ? 'forward' : 'backward');
-    }
-    
-    setPrevPath(pathname);
-  }, [pathname]);
-  
-  const variants = {
-    forward: {
-      hidden: { opacity: 0, x: 50 },
-      enter: { opacity: 1, x: 0 },
-      exit: { opacity: 0, x: -50 },
-    },
-    backward: {
-      hidden: { opacity: 0, x: -50 },
-      enter: { opacity: 1, x: 0 },
-      exit: { opacity: 0, x: 50 },
-    },
-  };
-  
-  return (
-    <motion.div
-      key={pathname}
-      initial="hidden"
-      animate="enter"
-      exit="exit"
-      variants={variants[direction]}
-      transition={{ duration: 0.3, ease: "easeInOut" }}
-    >
-      {children}
-    </motion.div>
-  );
-}
-```
+### 7. Veritabanı Optimizasyonu
 
-### 7. Performans Optimizasyonu
+- Veritabanı sorgularını optimize edin.
+- İndeksler ekleyerek sorgu performansını artırın.
+- Büyük veri kümeleri için sayfalama veya sonsuz kaydırma uygulayın.
 
-Animasyonların performansını optimize etmek için şunları yapmalıyız:
+### 8. Sunucu Yanıt Sürelerini İyileştirme
 
-- CSS transform ve opacity özelliklerini kullanarak GPU hızlandırmasından faydalanma
-- Karmaşık animasyonları sadece masaüstü cihazlarda etkinleştirme
-- Tüm animasyonlar için `will-change` CSS özelliğini kullanma
+- Sunucu yanıt sürelerini izleyin ve optimize edin.
+- Yavaş API yanıtlarını belirlemek için profil oluşturma araçlarını kullanın.
+- Ağır işlemleri arka planda veya iş parçacıkları kullanarak gerçekleştirin.
 
-### 8. Erişilebilirlik
+Bu performans iyileştirmeleri, AKBAT CONSTRUCTION web sitesinin daha hızlı yüklenmesini ve daha iyi bir kullanıcı deneyimi sunmasını sağlayacaktır.
 
-Animasyonları erişilebilir hale getirmek için:
+## Sonuç
 
-```tsx
-// Kullanıcı tercihleri için animasyonları devre dışı bırakma
-// app/components/PageTransition.tsx içinde
+Yukarıda belirtilen öneriler ve iyileştirmeler, AKBAT CONSTRUCTION web sitesinin genel kalitesini ve kullanıcı deneyimini önemli ölçüde artıracaktır. Animasyonlu sayfa geçişleri, kullanıcıları daha akıcı ve ilgi çekici bir deneyimle buluştururken, performans optimizasyonları sitenin hızını ve yanıt verme süresini iyileştirecektir.
 
-import { useReducedMotion } from 'framer-motion';
-
-export default function PageTransition({ children }) {
-  const shouldReduceMotion = useReducedMotion();
-  
-  const variants = shouldReduceMotion 
-    ? {
-        hidden: { opacity: 0 },
-        enter: { opacity: 1 },
-        exit: { opacity: 0 },
-      }
-    : {
-        hidden: { opacity: 0, y: 20 },
-        enter: { opacity: 1, y: 0 },
-        exit: { opacity: 0, y: 20 },
-      };
-  
-  // ...geri kalan kod
-}
-```
-
-### 9. Uygulama Planı
-
-1. Framer Motion'ı projeye ekle
-2. Temel sayfa geçiş bileşenini oluştur
-3. Layout dosyasına entegre et
-4. Farklı sayfa türleri için özel geçişler geliştir
-5. Sayfa içi bileşenler için kademeli animasyonlar ekle
-6. Tarayıcı performansını test et ve optimize et
-7. Erişilebilirlik uyarlamalarını ekle
-
-Bu strateji, modern web geliştirme standartlarına uygun olarak AKBAT CONSTRUCTION web sitesinde sayfa geçişleri için profesyonel, akıcı ve duyarlı animasyonlar sağlayacaktır. 
+Bu değişiklikleri adım adım uygulamak, test etmek ve sürekli iyileştirmeler yapmak, AKBAT CONSTRUCTION'ın web varlığını sektördeki en iyi uygulamalara uygun hale getirecektir. 
